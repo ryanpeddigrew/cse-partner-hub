@@ -1,0 +1,2779 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canadian Special Events — 30th Anniversary Partner Hub & Centralized Media Kit</title>
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Luxury Serif) + Plus Jakarta Sans (Crisp UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            plum: {
+              950: '#140410',
+              900: '#1F0718',
+              800: '#2E0B24',
+              700: '#421234',
+              600: '#5C1B48',
+            },
+            gold: {
+              300: '#F6DF9A',
+              400: '#F0D078',
+              500: '#D4AF37',
+              600: '#A88024',
+              700: '#7D5D16',
+            },
+            peony: {
+              400: '#E55A98',
+              500: '#D9387E',
+              600: '#B81D65',
+              700: '#8F134D',
+            },
+            peach: {
+              300: '#F7C2AA',
+              400: '#F2A585',
+            },
+            ivory: {
+              50: '#FDFBF7',
+              100: '#FAF6F0',
+              200: '#EFE8DC',
+              300: '#E2D6C3',
+            },
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            luxury: '0 24px 60px -15px rgba(20, 4, 16, 0.55)',
+            card: '0 14px 36px -10px rgba(31, 7, 24, 0.14)',
+            gold: '0 8px 30px -6px rgba(212, 175, 55, 0.28)',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    /* Editorial Luxury Typography & Metallic Gold Finishes */
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background-color: #140410;
+      color: #FAF6F0;
+      overflow-x: hidden;
+    }
+
+    .font-editorial {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+
+    .text-gold-gradient {
+      background: linear-gradient(125deg, #F6DF9A 0%, #D4AF37 42%, #F0D078 68%, #A88024 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .bg-gold-gradient {
+      background: linear-gradient(135deg, #F0D078 0%, #D4AF37 52%, #A88024 100%);
+    }
+
+    .border-gold-hairline {
+      border-color: rgba(212, 175, 55, 0.28);
+    }
+
+    .bg-velvet-radial {
+      background:
+        radial-gradient(ellipse 75% 55% at 15% 10%, rgba(184, 29, 101, 0.24) 0%, transparent 65%),
+        radial-gradient(ellipse 65% 55% at 88% 82%, rgba(212, 175, 55, 0.14) 0%, transparent 62%),
+        linear-gradient(180deg, #140410 0%, #1F0718 52%, #140410 100%);
+    }
+
+    .bg-ivory-editorial {
+      background: linear-gradient(180deg, #FAF6F0 0%, #EFE8DC 100%);
+      color: #1F0718;
+    }
+
+    /* Hardcover 3D Book Styling */
+    .book-3d {
+      position: relative;
+      transform: perspective(1200px) rotateY(-10deg) rotateX(2deg);
+      transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.55s ease;
+      box-shadow:
+        -18px 24px 48px rgba(10, 2, 8, 0.72),
+        -4px 0 0 #2E0B24,
+        -7px 0 0 #A88024,
+        -10px 0 0 #1F0718;
+    }
+    .book-3d:hover {
+      transform: perspective(1200px) rotateY(-3deg) rotateX(0deg) translateY(-4px);
+    }
+
+    /* Custom Range Sliders */
+    input[type="range"].cse-slider {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 6px;
+      border-radius: 999px;
+      background: rgba(212, 175, 55, 0.22);
+      outline: none;
+    }
+    input[type="range"].cse-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #F0D078, #D4AF37);
+      border: 2px solid #1F0718;
+      cursor: pointer;
+      box-shadow: 0 2px 10px rgba(212, 175, 55, 0.45);
+    }
+    input[type="range"].cse-slider::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #F0D078, #D4AF37);
+      border: 2px solid #1F0718;
+      cursor: pointer;
+    }
+
+    /* Hide scrollbar cleanly for horizontal sticky anchor bar */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* Print styling for Invoice Receipt */
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #printable-receipt, #printable-receipt * {
+        visibility: visible;
+      }
+      #printable-receipt {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: #ffffff !important;
+        color: #1F0718 !important;
+        box-shadow: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-peony-600 selection:text-ivory-100">
+
+  <!-- ===================================================================== -->
+  <!-- TOP EXECUTIVE DEMO BAR (URL-Routed View Switcher + Hide Toggle)       -->
+  <!-- ===================================================================== -->
+  <div id="demo-bar" class="sticky top-0 z-50 bg-plum-950/95 backdrop-blur-md border-b border-gold-hairline transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2.5 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2.5">
+        <span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-gold-400"></span>
+        <span class="text-[11px] font-semibold tracking-[0.2em] uppercase text-gold-400">Live Link Preview</span>
+      </div>
+
+      <!-- Three Quick-Switch Tabs -->
+      <div class="flex flex-wrap items-center gap-1.5 bg-plum-900/90 p-1 rounded-full border border-gold-hairline">
+        <button onclick="switchView('prospect')" data-view-btn="prospect"
+          class="view-tab px-3.5 py-1.5 rounded-full text-xs font-medium transition-all duration-200 cursor-pointer">
+          New Prospect Link <span class="hidden md:inline opacity-70">(?view=prospect)</span>
+        </button>
+        <button onclick="switchView('returning')" data-view-btn="returning"
+          class="view-tab px-3.5 py-1.5 rounded-full text-xs font-medium transition-all duration-200 cursor-pointer">
+          Returning Partner Link <span class="hidden md:inline opacity-70">(?view=returning)</span>
+        </button>
+        <button onclick="switchView('executive')" data-view-btn="executive"
+          class="view-tab px-3.5 py-1.5 rounded-full text-xs font-medium transition-all duration-200 cursor-pointer">
+          Stacy's Revenue &amp; Admin Tour <span class="hidden md:inline opacity-70">(?view=executive)</span>
+        </button>
+      </div>
+
+      <!-- Copy Active Link + Hide Demo Bar -->
+      <div class="flex items-center gap-2">
+        <button onclick="copyActiveLink()"
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-plum-800 hover:bg-plum-700 text-ivory-100 border border-gold-hairline transition cursor-pointer">
+          <svg class="w-3.5 h-3.5 text-gold-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+          Copy Active Link
+        </button>
+        <button onclick="toggleDemoBar(true)"
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium text-ivory-200/80 hover:text-ivory-100 hover:bg-plum-800/70 transition cursor-pointer"
+          title="Hide demo controls for clean sponsor presentation">
+          Hide Demo Bar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Restore Demo Bar Floating Pill (Only visible when Demo Bar is hidden) -->
+  <button id="restore-demo-btn" onclick="toggleDemoBar(false)"
+    class="hidden fixed top-3 right-3 z-50 px-3.5 py-1.5 rounded-full bg-plum-950/90 border border-gold-500/50 text-[11px] font-semibold tracking-wider uppercase text-gold-400 shadow-luxury hover:bg-plum-900 transition cursor-pointer">
+    Show Link Switcher
+  </button>
+
+  <!-- ===================================================================== -->
+  <!-- PRIMARY STICKY BRAND NAVIGATION                                       -->
+  <!-- ===================================================================== -->
+  <header id="main-nav" class="sticky top-0 z-40 bg-plum-900/92 backdrop-blur-md border-b border-gold-hairline">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16 gap-4">
+        <!-- Brand Monogram -->
+        <a href="#top" onclick="exitPortalIfActive()" class="flex items-center gap-3 shrink-0 group">
+          <div class="w-9 h-9 rounded-full bg-plum-950 border border-gold-500/60 flex items-center justify-center shadow-gold">
+            <span class="font-editorial text-lg font-bold text-gold-gradient leading-none">30</span>
+          </div>
+          <div class="leading-tight">
+            <div class="font-editorial text-lg sm:text-xl font-semibold tracking-wide text-ivory-100 group-hover:text-gold-400 transition">Canadian Special Events</div>
+            <div class="text-[10px] tracking-[0.22em] uppercase text-gold-400/90">30th Anniversary Partner Hub</div>
+          </div>
+        </a>
+
+        <!-- Sticky Anchor Links (Shown in Prospect & Returning views) -->
+        <nav id="prospectus-anchors" class="hidden lg:flex items-center gap-5 text-xs font-medium text-ivory-200/85 overflow-x-auto no-scrollbar">
+          <a href="#overview" onclick="exitPortalIfActive()" class="hover:text-gold-400 transition whitespace-nowrap">Overview</a>
+          <a href="#awards-gala" onclick="exitPortalIfActive()" class="hover:text-gold-400 transition whitespace-nowrap">Awards Gala</a>
+          <a href="#cse-live" onclick="exitPortalIfActive()" class="hover:text-gold-400 transition whitespace-nowrap">CSE Live!</a>
+          <a href="#hosted-planner" onclick="exitPortalIfActive()" class="hover:text-gold-400 transition whitespace-nowrap">Hosted Planner</a>
+          <a href="#hardcover-magazine" onclick="exitPortalIfActive()" class="hover:text-gold-400 transition whitespace-nowrap">Hardcover Magazine &amp; Bidding</a>
+          <a href="#marketplace" onclick="exitPortalIfActive()" class="hover:text-gold-400 transition whitespace-nowrap">Marketplace</a>
+          <a href="#integrated-campaigns" onclick="exitPortalIfActive()" class="hover:text-gold-400 transition whitespace-nowrap">Integrated Campaigns</a>
+        </nav>
+
+        <!-- Right CTA: Preview / Open Sponsor Portal -->
+        <div class="flex items-center gap-2.5 shrink-0">
+          <button id="portal-nav-btn" onclick="toggleSponsorPortal()"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold tracking-wide border border-gold-500/60 bg-plum-950/80 hover:bg-gold-500 hover:text-plum-950 text-gold-300 transition cursor-pointer">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+            <span id="portal-nav-label">Partner Portal</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Horizontal Anchor Bar -->
+      <div id="mobile-anchors" class="lg:hidden flex items-center gap-4 pb-2.5 pt-0.5 text-xs font-medium text-ivory-200/80 overflow-x-auto no-scrollbar border-t border-white/5">
+        <a href="#overview" onclick="exitPortalIfActive()" class="whitespace-nowrap hover:text-gold-400">Overview</a>
+        <a href="#awards-gala" onclick="exitPortalIfActive()" class="whitespace-nowrap hover:text-gold-400">Awards Gala</a>
+        <a href="#cse-live" onclick="exitPortalIfActive()" class="whitespace-nowrap hover:text-gold-400">CSE Live!</a>
+        <a href="#hosted-planner" onclick="exitPortalIfActive()" class="whitespace-nowrap hover:text-gold-400">Hosted Planner</a>
+        <a href="#hardcover-magazine" onclick="exitPortalIfActive()" class="whitespace-nowrap hover:text-gold-400">Magazine &amp; Bidding</a>
+        <a href="#marketplace" onclick="exitPortalIfActive()" class="whitespace-nowrap hover:text-gold-400">Marketplace</a>
+        <a href="#integrated-campaigns" onclick="exitPortalIfActive()" class="whitespace-nowrap hover:text-gold-400">Campaigns</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================== -->
+  <!-- MAIN CONTENT CONTAINER                                                -->
+  <!-- ===================================================================== -->
+  <main id="top" class="pb-32">
+
+    <!-- =================================================================== -->
+    <!-- CONTAINER A: PROSPECTUS EXPERIENCE (Prospect OR Returning View)     -->
+    <!-- =================================================================== -->
+    <div id="prospectus-experience">
+
+      <!-- =============================================================== -->
+      <!-- HERO SECTION (Dynamically Tailored to Prospect vs. Returning)   -->
+      <!-- =============================================================== -->
+      <section id="overview" class="relative bg-velvet-radial overflow-hidden border-b border-gold-hairline">
+        <!-- Subtle SVG Botanical Peony Corner Accents & Gold Ribbon Curves -->
+        <svg class="pointer-events-none absolute -top-12 -left-12 w-72 h-72 opacity-25" viewBox="0 0 260 260" fill="none">
+          <circle cx="70" cy="70" r="65" fill="url(#peonyGrad1)" />
+          <circle cx="115" cy="45" r="45" fill="url(#peachGrad1)" opacity="0.7" />
+          <circle cx="45" cy="120" r="50" fill="#B81D65" opacity="0.65" />
+          <defs>
+            <radialGradient id="peonyGrad1"><stop offset="0%" stop-color="#D9387E"/><stop offset="100%" stop-color="#140410" stop-opacity="0"/></radialGradient>
+            <radialGradient id="peachGrad1"><stop offset="0%" stop-color="#F2A585"/><stop offset="100%" stop-color="#140410" stop-opacity="0"/></radialGradient>
+          </defs>
+        </svg>
+        <svg class="pointer-events-none absolute top-0 right-0 w-96 h-96 opacity-30" viewBox="0 0 400 400" fill="none">
+          <path d="M120 -10 C 210 60, 270 15, 360 110 C 410 165, 385 245, 420 290" stroke="url(#goldRibbon)" stroke-width="18" stroke-linecap="round" opacity="0.45"/>
+          <path d="M160 -20 C 245 45, 295 35, 375 130" stroke="url(#goldRibbon)" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+          <defs>
+            <linearGradient id="goldRibbon" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#A88024" stop-opacity="0"/>
+              <stop offset="50%" stop-color="#F0D078"/>
+              <stop offset="100%" stop-color="#D4AF37" stop-opacity="0.1"/>
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-14 pb-16 lg:pt-20 lg:pb-24 relative z-10">
+          <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+            <!-- Left Hero Copy -->
+            <div class="lg:col-span-7 space-y-6">
+              <div id="hero-badge" class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-plum-800/90 border border-gold-500/45 text-[11px] font-semibold tracking-[0.2em] uppercase text-gold-400">
+                FIRST-TIME PARTNER PROSPECTUS • 30TH ANNIVERSARY
+              </div>
+
+              <h1 id="hero-headline" class="font-editorial text-4xl sm:text-5xl lg:text-6xl font-semibold leading-[1.06] tracking-tight text-ivory-100">
+                Be Seen. Be Experienced.<br />
+                <span class="text-gold-gradient italic">Be Remembered.</span>
+              </h1>
+
+              <p id="hero-subhead" class="text-base sm:text-lg text-ivory-200/85 leading-relaxed max-w-2xl">
+                Connect directly with Canada's corporate planners, agency directors, and event decision-makers across two distinct flagship audiences: CSE Live! and the Canadian Event Awards Gala.
+              </p>
+
+              <!-- Hero Action Buttons -->
+              <div class="flex flex-wrap items-center gap-3.5 pt-2">
+                <a id="hero-primary-cta" href="#awards-gala"
+                  class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-gold-gradient text-plum-950 font-semibold text-sm tracking-wide shadow-gold hover:brightness-105 transition">
+                  Explore 30th Anniversary Opportunities
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+                <a href="#hardcover-magazine"
+                  class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-gold-500/50 bg-plum-900/60 hover:bg-plum-800 text-ivory-100 font-medium text-sm transition">
+                  Hardcover Magazine &amp; Topic Bidding
+                </a>
+              </div>
+
+              <!-- Key Dates Strip -->
+              <div class="grid grid-cols-3 gap-4 pt-6 border-t border-gold-hairline max-w-xl">
+                <div>
+                  <div class="text-[11px] uppercase tracking-[0.18em] text-gold-400">Gala Night</div>
+                  <div class="font-editorial text-xl sm:text-2xl font-semibold text-ivory-100 mt-0.5">April 28, 2027</div>
+                </div>
+                <div>
+                  <div class="text-[11px] uppercase tracking-[0.18em] text-gold-400">Collector's Book</div>
+                  <div class="font-editorial text-xl sm:text-2xl font-semibold text-ivory-100 mt-0.5">Spring 2027</div>
+                </div>
+                <div>
+                  <div class="text-[11px] uppercase tracking-[0.18em] text-gold-400">Legacy</div>
+                  <div class="font-editorial text-xl sm:text-2xl font-semibold text-ivory-100 mt-0.5">30 Years Strong</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Hero Visual: Official 30th Anniversary Gala Crest Card (Pure CSS/SVG Artwork) -->
+            <div class="lg:col-span-5">
+              <div class="relative rounded-2xl p-8 sm:p-10 bg-gradient-to-br from-plum-800 via-plum-900 to-plum-950 border border-gold-500/45 shadow-luxury overflow-hidden text-center">
+                <!-- Decorative Peony Petals (Top Left & Bottom Right) -->
+                <svg class="pointer-events-none absolute -top-6 -left-6 w-36 h-36 opacity-85" viewBox="0 0 160 160" fill="none">
+                  <path d="M10 90 C 10 25, 65 5, 110 35 C 75 55, 65 85, 70 120 C 35 125, 10 110, 10 90 Z" fill="#B81D65"/>
+                  <path d="M25 65 C 35 20, 95 10, 128 48 C 96 62, 82 88, 76 112 C 48 106, 20 92, 25 65 Z" fill="#F2A585" opacity="0.88"/>
+                  <circle cx="64" cy="60" r="14" fill="#D4AF37" opacity="0.85"/>
+                </svg>
+                <svg class="pointer-events-none absolute -bottom-8 -right-6 w-40 h-40 opacity-85" viewBox="0 0 160 160" fill="none">
+                  <path d="M150 70 C 150 135, 95 155, 50 125 C 85 105, 95 75, 90 40 C 125 35, 150 50, 150 70 Z" fill="#B81D65"/>
+                  <path d="M135 95 C 125 140, 65 150, 32 112 C 64 98, 78 72, 84 48 C 112 54, 140 68, 135 95 Z" fill="#F2A585" opacity="0.88"/>
+                  <circle cx="98" cy="102" r="13" fill="#D4AF37" opacity="0.85"/>
+                </svg>
+                <!-- Sweeping Gold Silk Ribbon -->
+                <svg class="pointer-events-none absolute inset-0 w-full h-full opacity-55" viewBox="0 0 400 320" preserveAspectRatio="none" fill="none">
+                  <path d="M-20 275 C 85 215, 130 305, 240 285" stroke="url(#crestGold)" stroke-width="7" stroke-linecap="round"/>
+                  <path d="M235 -10 C 300 45, 340 15, 420 95" stroke="url(#crestGold)" stroke-width="9" stroke-linecap="round"/>
+                  <defs>
+                    <linearGradient id="crestGold" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0%" stop-color="#A88024" stop-opacity="0.1"/>
+                      <stop offset="50%" stop-color="#F6DF9A"/>
+                      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0.2"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                <!-- Official Gala Typography Lockup -->
+                <div class="relative z-10 py-3">
+                  <div class="flex items-center justify-center gap-3 text-[11px] tracking-[0.35em] uppercase text-ivory-200/90">
+                    <span class="w-8 h-px bg-gold-500/70"></span>
+                    <span>THE</span>
+                    <span class="w-8 h-px bg-gold-500/70"></span>
+                  </div>
+                  <div class="font-editorial text-xl tracking-[0.3em] uppercase text-ivory-100 mt-1">CANADIAN</div>
+                  <div class="font-editorial text-5xl sm:text-6xl font-bold tracking-wider text-gold-gradient leading-[0.95] mt-1">
+                    EVENT<br />AWARDS
+                  </div>
+
+                  <!-- Gold Maple Leaf Divider -->
+                  <div class="flex items-center justify-center gap-3 my-4">
+                    <span class="w-16 h-px bg-gradient-to-r from-transparent to-gold-500"></span>
+                    <svg class="w-5 h-5 text-gold-400" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 1.5l1.9 4.7 2.8-1.4-.9 4.5 3.8-1.5-1.1 2.7 2.5 1-3.3 2.5.8 2.2-5.4-.6V22h-2.2v-6.4l-5.4.6.8-2.2-3.3-2.5 2.5-1-1.1-2.7 3.8 1.5-.9-4.5 2.8 1.4L12 1.5z"/>
+                    </svg>
+                    <span class="w-16 h-px bg-gradient-to-l from-transparent to-gold-500"></span>
+                  </div>
+
+                  <!-- 30 Celebrating Years Watermark Lockup -->
+                  <div class="relative py-2">
+                    <div class="font-editorial text-[96px] leading-none font-bold text-peony-600/35 select-none">30</div>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                      <span class="text-[11px] tracking-[0.35em] uppercase text-ivory-100">CELEBRATING</span>
+                      <span class="font-editorial text-2xl tracking-[0.28em] uppercase text-gold-400 font-semibold mt-0.5">YEARS</span>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center justify-center gap-3 mt-3 text-sm tracking-[0.24em] uppercase text-gold-300 font-medium">
+                    <span class="w-7 h-px bg-gold-500/70"></span>
+                    <span>APRIL 28, 2027</span>
+                    <span class="w-7 h-px bg-gold-500/70"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ============================================================= -->
+          <!-- VIEW-SPECIFIC SUB-PANELS (Toggled cleanly by JS)              -->
+          <!-- ============================================================= -->
+
+          <!-- PROSPECT-ONLY PANEL: Two Audiences Overview + Interactive Goal Selector -->
+          <div id="prospect-overview-panel" class="mt-14 space-y-12">
+            <!-- Two Audiences. One National Ecosystem. -->
+            <div>
+              <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6">
+                <div>
+                  <div class="text-[11px] font-semibold tracking-[0.22em] uppercase text-gold-400">The CSE Ecosystem</div>
+                  <h2 class="font-editorial text-3xl sm:text-4xl font-semibold text-ivory-100 mt-1">Two Audiences. One National Ecosystem.</h2>
+                </div>
+                <p class="text-sm text-ivory-200/75 max-w-md">Sponsor visibility spans the industry's highest-trust rooms—from executive Gala tables to live show-floor purchasing and permanent hardcover print.</p>
+              </div>
+
+              <div class="grid md:grid-cols-3 gap-5">
+                <div class="rounded-2xl p-6 bg-plum-900/75 border border-gold-hairline hover:border-gold-500/60 transition">
+                  <div class="text-[11px] font-semibold tracking-[0.2em] uppercase text-peony-400">April 28, 2027 • Gala</div>
+                  <h3 class="font-editorial text-2xl font-semibold text-ivory-100 mt-1.5">Canadian Event Awards</h3>
+                  <p class="text-xs uppercase tracking-widest text-gold-400 mt-1">"The Night of Nights"</p>
+                  <p class="text-sm text-ivory-200/80 leading-relaxed mt-3">National leadership, C-suite executives, and top event producers from coast to coast—an executive audience distinct from the trade show floor.</p>
+                </div>
+
+                <div class="rounded-2xl p-6 bg-plum-900/75 border border-gold-hairline hover:border-gold-500/60 transition">
+                  <div class="text-[11px] font-semibold tracking-[0.2em] uppercase text-peony-400">Live Show &amp; Conference</div>
+                  <h3 class="font-editorial text-2xl font-semibold text-ivory-100 mt-1.5">CSE Live! Trade Show</h3>
+                  <p class="text-xs uppercase tracking-widest text-gold-400 mt-1">Active Decision-Makers</p>
+                  <p class="text-sm text-ivory-200/80 leading-relaxed mt-3">Active corporate, wedding, and association planners actively sourcing venues, AV production, hospitality, destinations, and curated experiences.</p>
+                </div>
+
+                <div class="rounded-2xl p-6 bg-plum-900/75 border border-gold-hairline hover:border-gold-500/60 transition">
+                  <div class="text-[11px] font-semibold tracking-[0.2em] uppercase text-peony-400">Spring 2027 • Year-Round</div>
+                  <h3 class="font-editorial text-2xl font-semibold text-ivory-100 mt-1.5">CSE Media &amp; Collector's Book</h3>
+                  <p class="text-xs uppercase tracking-widest text-gold-400 mt-1">Permanent Editorial Authority</p>
+                  <p class="text-sm text-ivory-200/80 leading-relaxed mt-3">Year-round editorial authority, national newsletter reach, our new YouTube long-form education channel, and the permanent 30th Anniversary hardcover book.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive "Find Your Partnership Path" Goal Selector -->
+            <div class="rounded-2xl p-6 sm:p-8 bg-plum-950/85 border border-gold-500/35">
+              <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-6">
+                <div>
+                  <span class="text-[11px] font-semibold tracking-[0.22em] uppercase text-gold-400">Tailored Discovery</span>
+                  <h3 class="font-editorial text-2xl sm:text-3xl font-semibold text-ivory-100 mt-0.5">Find Your Partnership Path</h3>
+                </div>
+                <p class="text-xs sm:text-sm text-ivory-200/75">Select your primary commercial goal—ideal for national brands, banks, venues, and suppliers alike.</p>
+              </div>
+
+              <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
+                <button onclick="selectGoalPath('buyer-access')"
+                  class="goal-card text-left p-4 rounded-xl bg-plum-900/80 border border-gold-hairline hover:border-gold-400 hover:bg-plum-800/80 transition group cursor-pointer">
+                  <div class="text-[10px] font-semibold uppercase tracking-[0.2em] text-peach-400">No Booth Needed</div>
+                  <div class="font-editorial text-xl font-semibold text-ivory-100 mt-1 group-hover:text-gold-300">Direct Buyer Access</div>
+                  <p class="text-xs text-ivory-200/75 mt-1.5 leading-relaxed">Hosted Planner Partnership ($10,000) &amp; VIP Reception access to 10 hand-picked buyers.</p>
+                  <div class="text-[11px] font-semibold text-gold-400 mt-3 inline-flex items-center gap-1">Jump to curated access <span>&rarr;</span></div>
+                </button>
+
+                <button onclick="selectGoalPath('print-topic')"
+                  class="goal-card text-left p-4 rounded-xl bg-plum-900/80 border border-gold-hairline hover:border-gold-400 hover:bg-plum-800/80 transition group cursor-pointer">
+                  <div class="text-[10px] font-semibold uppercase tracking-[0.2em] text-peach-400">Category Exclusivity</div>
+                  <div class="font-editorial text-xl font-semibold text-ivory-100 mt-1 group-hover:text-gold-300">Own an Industry Topic in Print</div>
+                  <p class="text-xs text-ivory-200/75 mt-1.5 leading-relaxed">Bid on or lock exclusive editorial features and tribute pages in the Spring 2027 Hardcover Book.</p>
+                  <div class="text-[11px] font-semibold text-gold-400 mt-3 inline-flex items-center gap-1">Explore topic bidding <span>&rarr;</span></div>
+                </button>
+
+                <button onclick="selectGoalPath('prestige')"
+                  class="goal-card text-left p-4 rounded-xl bg-plum-900/80 border border-gold-hairline hover:border-gold-400 hover:bg-plum-800/80 transition group cursor-pointer">
+                  <div class="text-[10px] font-semibold uppercase tracking-[0.2em] text-peach-400">National Spotlight</div>
+                  <div class="font-editorial text-xl font-semibold text-ivory-100 mt-1 group-hover:text-gold-300">Flagship Brand Prestige</div>
+                  <p class="text-xs text-ivory-200/75 mt-1.5 leading-relaxed">Gala Presenting ($35,000), 30th Anniversary Tribute Film ($15,000), or Award Category ($3,995).</p>
+                  <div class="text-[11px] font-semibold text-gold-400 mt-3 inline-flex items-center gap-1">View Gala ownership <span>&rarr;</span></div>
+                </button>
+
+                <button onclick="selectGoalPath('show-floor')"
+                  class="goal-card text-left p-4 rounded-xl bg-plum-900/80 border border-gold-hairline hover:border-gold-400 hover:bg-plum-800/80 transition group cursor-pointer">
+                  <div class="text-[10px] font-semibold uppercase tracking-[0.2em] text-peach-400">Live Activation</div>
+                  <div class="font-editorial text-xl font-semibold text-ivory-100 mt-1 group-hover:text-gold-300">Live Show Floor Presence</div>
+                  <p class="text-xs text-ivory-200/75 mt-1.5 leading-relaxed">Elevated Marketplace Pods ($2,250–$11,500) &amp; Integrated Year-Round Campaigns.</p>
+                  <div class="text-[11px] font-semibold text-gold-400 mt-3 inline-flex items-center gap-1">View Marketplace spaces <span>&rarr;</span></div>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- RETURNING-ONLY PANEL: What's Different From Last Year (5-Card Comparison) + Quick Upgrade -->
+          <div id="returning-overview-panel" class="hidden mt-14 space-y-8">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+              <div>
+                <div class="text-[11px] font-semibold tracking-[0.22em] uppercase text-gold-400">Year 30 Upgrade Briefing</div>
+                <h2 class="font-editorial text-3xl sm:text-4xl font-semibold text-ivory-100 mt-1">What Changed From Last Year</h2>
+              </div>
+              <p class="text-sm text-ivory-200/75 max-w-lg">Every friction point from past seasons has been redesigned into one direct, sponsor-first experience.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+              <!-- Card 1 -->
+              <div class="rounded-2xl p-6 bg-plum-900/80 border border-gold-hairline flex flex-col justify-between">
+                <div>
+                  <div class="text-[11px] font-semibold tracking-[0.18em] uppercase text-gold-400">01 • Deliverables &amp; Deadlines</div>
+                  <div class="mt-3 p-3 rounded-lg bg-plum-950/70 border border-white/5 text-xs text-ivory-200/65">
+                    <span class="uppercase tracking-wider text-[10px] text-peony-400 font-semibold block mb-1">Last Year</span>
+                    Scattered email chains, manual Google Drive links, and repeated follow-ups for logos and bios.
+                  </div>
+                  <div class="mt-2.5 p-3 rounded-lg bg-gold-500/10 border border-gold-500/35 text-xs text-ivory-100">
+                    <span class="uppercase tracking-wider text-[10px] text-gold-400 font-semibold block mb-1">2027 Anniversary Upgrade</span>
+                    One private Sponsor Portal with guided uploads, staff pass registration, and built-in milestone dates.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="rounded-2xl p-6 bg-plum-900/80 border border-gold-hairline flex flex-col justify-between">
+                <div>
+                  <div class="text-[11px] font-semibold tracking-[0.18em] uppercase text-gold-400">02 • First Right of Refusal</div>
+                  <div class="mt-3 p-3 rounded-lg bg-plum-950/70 border border-white/5 text-xs text-ivory-200/65">
+                    <span class="uppercase tracking-wider text-[10px] text-peony-400 font-semibold block mb-1">Last Year</span>
+                    Phone calls and back-and-forth PDFs to check availability before general outreach.
+                  </div>
+                  <div class="mt-2.5 p-3 rounded-lg bg-gold-500/10 border border-gold-500/35 text-xs text-ivory-100">
+                    <span class="uppercase tracking-wider text-[10px] text-gold-400 font-semibold block mb-1">2027 Anniversary Upgrade</span>
+                    Priority window to lock your booth tier, Hosted Planner cohort, or exclusive Magazine Topic before open outreach begins.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="rounded-2xl p-6 bg-plum-900/80 border border-gold-hairline flex flex-col justify-between">
+                <div>
+                  <div class="text-[11px] font-semibold tracking-[0.18em] uppercase text-gold-400">03 • Curated Environments</div>
+                  <div class="mt-3 p-3 rounded-lg bg-plum-950/70 border border-white/5 text-xs text-ivory-200/65">
+                    <span class="uppercase tracking-wider text-[10px] text-peony-400 font-semibold block mb-1">Last Year</span>
+                    Traditional pipe-and-drape trade show terminology and standard exhibit listings.
+                  </div>
+                  <div class="mt-2.5 p-3 rounded-lg bg-gold-500/10 border border-gold-500/35 text-xs text-ivory-100">
+                    <span class="uppercase tracking-wider text-[10px] text-gold-400 font-semibold block mb-1">2027 Anniversary Upgrade</span>
+                    Upgraded Marketplace tiers (Pop-Up, Showcase Pod, Signature Pod, Flagship Island)—all including 8 staff passes, social intro, and 6-month premium CSE directory listing.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="rounded-2xl p-6 bg-plum-900/80 border border-gold-hairline flex flex-col justify-between">
+                <div>
+                  <div class="text-[11px] font-semibold tracking-[0.18em] uppercase text-gold-400">04 • Own the Story in Print</div>
+                  <div class="mt-3 p-3 rounded-lg bg-plum-950/70 border border-white/5 text-xs text-ivory-200/65">
+                    <span class="uppercase tracking-wider text-[10px] text-peony-400 font-semibold block mb-1">Last Year</span>
+                    No print edition in two years; limited static banner options.
+                  </div>
+                  <div class="mt-2.5 p-3 rounded-lg bg-gold-500/10 border border-gold-500/35 text-xs text-ivory-100">
+                    <span class="uppercase tracking-wider text-[10px] text-gold-400 font-semibold block mb-1">2027 Anniversary Upgrade</span>
+                    First look at bidding on or claiming category-exclusive feature articles in the 30th Anniversary Hardcover Collector's Edition.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="rounded-2xl p-6 bg-plum-900/80 border border-gold-hairline flex flex-col justify-between">
+                <div>
+                  <div class="text-[11px] font-semibold tracking-[0.18em] uppercase text-gold-400">05 • Zero Surcharges &amp; Direct Settlement</div>
+                  <div class="mt-3 p-3 rounded-lg bg-plum-950/70 border border-white/5 text-xs text-ivory-200/65">
+                    <span class="uppercase tracking-wider text-[10px] text-peony-400 font-semibold block mb-1">Last Year</span>
+                    Separate contract emails, manual invoicing waits, and third-party checkout hops.
+                  </div>
+                  <div class="mt-2.5 p-3 rounded-lg bg-gold-500/10 border border-gold-500/35 text-xs text-ivory-100">
+                    <span class="uppercase tracking-wider text-[10px] text-gold-400 font-semibold block mb-1">2027 Anniversary Upgrade</span>
+                    Confirm online or trigger a Net 30 invoice in one click with direct processing and instant portal unlock.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick-Upgrade Callout Card (6th slot in 3x2 grid) -->
+              <div class="rounded-2xl p-6 bg-gradient-to-br from-peony-700/45 via-plum-800 to-plum-950 border border-gold-400/60 flex flex-col justify-between shadow-gold">
+                <div>
+                  <span class="inline-block px-2.5 py-1 rounded-full bg-gold-500/20 text-gold-300 text-[10px] font-semibold uppercase tracking-[0.2em]">Priority Partner Upgrade</span>
+                  <h3 class="font-editorial text-2xl font-semibold text-ivory-100 mt-3">Elevate Past Booth or In-Kind Support</h3>
+                  <p class="text-xs text-ivory-200/85 mt-2 leading-relaxed">Turn last year's floor presence into guaranteed buyer meetings with a <strong>Hosted Planner Partnership ($10,000)</strong> or claim your industry's exclusive <strong>Hardcover Editorial Feature</strong>.</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-5">
+                  <a href="#hosted-planner" class="px-3.5 py-2 rounded-full bg-gold-gradient text-plum-950 text-xs font-semibold hover:brightness-105 transition">Upgrade to Hosted Planner</a>
+                  <a href="#hardcover-magazine" class="px-3.5 py-2 rounded-full border border-gold-400/60 text-gold-300 text-xs font-medium hover:bg-plum-800 transition">Lock Print Topic</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============================================================== -->
+      <!-- SECTION 1: CANADIAN EVENT AWARDS (WARM IVORY EDITORIAL SECTION) -->
+      <!-- =============================================================== -->
+      <section id="awards-gala" class="bg-ivory-editorial py-16 sm:py-24 border-b border-ivory-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
+            <div>
+              <div class="text-xs font-semibold tracking-[0.24em] uppercase text-peony-600">01 • April 28, 2027 • The Night of Nights</div>
+              <h2 class="font-editorial text-4xl sm:text-5xl font-bold text-plum-900 mt-1.5">Canadian Event Awards Gala</h2>
+              <p class="text-sm sm:text-base text-plum-900/75 max-w-2xl mt-2.5 leading-relaxed">
+                The most celebrated night in Canadian events. Ownership begins with the national awards launch and continues through the finalists campaign and the 30th Anniversary Gala.
+              </p>
+            </div>
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-plum-900 text-gold-300 text-xs font-medium self-start lg:self-auto">
+              <span>Standard marketing &amp; VIP Gala recognition included at every tier</span>
+            </div>
+          </div>
+
+          <!-- Flagship Legacy Spotlight: 30th Anniversary Tribute Film -->
+          <div class="mb-8 rounded-2xl p-6 sm:p-8 bg-gradient-to-r from-plum-950 via-plum-900 to-plum-800 text-ivory-100 border border-gold-500/50 shadow-luxury relative overflow-hidden">
+            <div class="grid lg:grid-cols-12 gap-6 items-center relative z-10">
+              <div class="lg:col-span-8 space-y-3">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/20 border border-gold-400/50 text-[10px] font-semibold tracking-[0.22em] uppercase text-gold-300">
+                  Flagship Legacy Opportunity • Exclusive Single Sponsor
+                </div>
+                <h3 class="font-editorial text-3xl sm:text-4xl font-semibold text-ivory-100">
+                  30th Anniversary Tribute Film Partner
+                </h3>
+                <p class="text-sm text-ivory-200/85 leading-relaxed max-w-2xl">
+                  A prestigious cinematic celebration of three decades of Canadian event excellence. Premieres live at the Canadian Event Awards Gala, screens across both days of CSE Live!, and distributes across all CSE media channels for two months with exclusive presenting sponsor recognition.
+                </p>
+                <div class="flex flex-wrap gap-3 pt-1 text-xs text-gold-300">
+                  <span class="px-3 py-1 rounded-full bg-plum-950/70 border border-gold-hairline">Gala World Premiere</span>
+                  <span class="px-3 py-1 rounded-full bg-plum-950/70 border border-gold-hairline">2-Day CSE Live! Screening</span>
+                  <span class="px-3 py-1 rounded-full bg-plum-950/70 border border-gold-hairline">60-Day National Media Distribution</span>
+                </div>
+              </div>
+              <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col items-start sm:items-center lg:items-end justify-between gap-4 border-t lg:border-t-0 lg:border-l border-gold-hairline pt-5 lg:pt-0 lg:pl-6">
+                <div class="lg:text-right">
+                  <div class="text-[11px] uppercase tracking-[0.2em] text-gold-400">Exclusive Investment</div>
+                  <div class="font-editorial text-4xl sm:text-5xl font-bold text-gold-gradient">$15,000</div>
+                </div>
+                <button data-cart-btn="gala-tribute-film" onclick="toggleCartItem('gala-tribute-film')"
+                  class="px-6 py-3 rounded-full bg-gold-gradient text-plum-950 font-semibold text-xs tracking-wide uppercase shadow-gold hover:brightness-105 transition cursor-pointer">
+                  Add to Partnership
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gala Sponsorship Grid -->
+          <div id="gala-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+        </div>
+      </section>
+
+      <!-- =============================================================== -->
+      <!-- SECTION 2: CSE LIVE! SPONSORSHIP OPPORTUNITIES                  -->
+      <!-- =============================================================== -->
+      <section id="cse-live" class="py-16 sm:py-24 bg-plum-950 border-b border-gold-hairline">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
+            <div>
+              <div class="text-xs font-semibold tracking-[0.24em] uppercase text-gold-400">02 • Trade Show &amp; Conference</div>
+              <h2 class="font-editorial text-4xl sm:text-5xl font-semibold text-ivory-100 mt-1.5">CSE Live! Sponsorship Opportunities</h2>
+              <p class="text-sm sm:text-base text-ivory-200/75 max-w-2xl mt-2.5 leading-relaxed">
+                Own a distinct live moment on the conference and marketplace floor. Every partner receives dedicated ownership branding plus tiered marketing recognition across CSE channels.
+              </p>
+            </div>
+
+            <!-- Filter Pills -->
+            <div class="flex flex-wrap gap-2">
+              <button onclick="filterCseLive('all')" data-live-filter="all" class="live-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition cursor-pointer">All (12)</button>
+              <button onclick="filterCseLive('brand')" data-live-filter="brand" class="live-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition cursor-pointer">Brand Sponsor</button>
+              <button onclick="filterCseLive('experience')" data-live-filter="experience" class="live-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition cursor-pointer">Experience Partner</button>
+              <button onclick="filterCseLive('hospitality')" data-live-filter="hospitality" class="live-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition cursor-pointer">Hospitality &amp; Networking</button>
+            </div>
+          </div>
+
+          <div id="cse-live-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+        </div>
+      </section>
+
+      <!-- =============================================================== -->
+      <!-- SECTION 3: HOSTED PLANNER PARTNERSHIP SPOTLIGHT                 -->
+      <!-- =============================================================== -->
+      <section id="hosted-planner" class="relative py-16 sm:py-24 bg-velvet-radial border-b border-gold-hairline overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+          <div class="grid lg:grid-cols-12 gap-10 items-start">
+            <!-- Left Editorial Pitch & Inclusions -->
+            <div class="lg:col-span-7 space-y-6">
+              <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-peony-600/25 border border-peony-500/40 text-[11px] font-semibold tracking-[0.2em] uppercase text-peach-300">
+                03 • High-ROI Direct Buyer Access • No Booth Required
+              </div>
+              <h2 class="font-editorial text-4xl sm:text-5xl font-semibold text-ivory-100 leading-tight">
+                Hosted Planner Partnership<br />
+                <span class="text-gold-gradient italic">Ten Planners. One Exclusive Connection.</span>
+              </h2>
+              <p class="text-sm sm:text-base text-ivory-200/85 leading-relaxed">
+                Go beyond passive floor traffic and build direct relationships with ten qualified event buyers hand-selected for your category—ideal for destinations, hotel groups, convention centres, venues, AV leaders, and national corporate brands.
+              </p>
+
+              <!-- Complete Inclusions Checklist -->
+              <div class="rounded-2xl p-6 bg-plum-900/75 border border-gold-hairline">
+                <div class="text-xs font-semibold tracking-[0.2em] uppercase text-gold-400 mb-4">Your $10,000 Partnership Includes</div>
+                <div class="grid sm:grid-cols-2 gap-3 text-sm text-ivory-200/90">
+                  <div class="flex items-start gap-2.5"><span class="text-gold-400 mt-0.5">&#10022;</span><span>Complimentary hosted conference passes for <strong>10 qualified event buyers</strong></span></div>
+                  <div class="flex items-start gap-2.5"><span class="text-gold-400 mt-0.5">&#10022;</span><span>Official <strong>Hosted Planner Partner</strong> recognition</span></div>
+                  <div class="flex items-start gap-2.5"><span class="text-gold-400 mt-0.5">&#10022;</span><span>Your company logo on all <strong>10 planner badges</strong> (plus optional branded lanyards)</span></div>
+                  <div class="flex items-start gap-2.5"><span class="text-gold-400 mt-0.5">&#10022;</span><span><strong>Facilitated meet-and-greet</strong> with your hosted cohort</span></div>
+                  <div class="flex items-start gap-2.5"><span class="text-gold-400 mt-0.5">&#10022;</span><span><strong>Exclusive private networking reception</strong> with your hosted group</span></div>
+                  <div class="flex items-start gap-2.5"><span class="text-gold-400 mt-0.5">&#10022;</span><span>Direct <strong>intro letter &amp; curated contact list</strong> for pre-event outreach</span></div>
+                  <div class="flex items-start gap-2.5"><span class="text-gold-400 mt-0.5">&#10022;</span><span>One full conference registration for your company representative</span></div>
+                  <div class="flex items-start gap-2.5"><span class="text-gold-400 mt-0.5">&#10022;</span><span>Dedicated social recognition &amp; <strong>1 sponsored editorial feature</strong> with newsletter reach</span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Interactive Widget: Build Your Curated 10-Buyer Mix -->
+            <div class="lg:col-span-5">
+              <div class="rounded-2xl p-6 sm:p-7 bg-ivory-100 text-plum-900 shadow-luxury border border-gold-500/40">
+                <div class="flex items-center justify-between gap-2 pb-4 border-b border-ivory-300">
+                  <div>
+                    <div class="text-[11px] font-semibold tracking-[0.2em] uppercase text-peony-600">Interactive Preview</div>
+                    <h3 class="font-editorial text-2xl font-bold text-plum-900 mt-0.5">Build Your Curated 10-Buyer Mix</h3>
+                  </div>
+                  <div class="text-right">
+                    <span id="buyer-mix-total" class="font-editorial text-3xl font-bold text-plum-900">10</span>
+                    <span class="text-xs font-semibold text-plum-900/60">/ 10</span>
+                  </div>
+                </div>
+
+                <p class="text-xs text-plum-900/75 mt-3 mb-5">
+                  Dial in the exact blend of buyers you want CSE to hand-pick for your private reception and badge cohort:
+                </p>
+
+                <!-- 4 Buyer Categories -->
+                <div id="buyer-mix-controls" class="space-y-4"></div>
+
+                <!-- Visual Segmented Bar -->
+                <div class="mt-5">
+                  <div id="buyer-mix-bar" class="h-2.5 w-full rounded-full overflow-hidden flex bg-ivory-300"></div>
+                  <div id="buyer-mix-summary" class="text-[11px] text-plum-900/75 mt-2 font-medium"></div>
+                </div>
+
+                <!-- Price + One-Click Add Button -->
+                <div class="mt-6 pt-5 border-t border-ivory-300 flex items-center justify-between gap-4">
+                  <div>
+                    <div class="text-[10px] font-semibold uppercase tracking-[0.2em] text-plum-900/60">Partnership Investment</div>
+                    <div class="font-editorial text-3xl font-bold text-plum-900">$10,000</div>
+                  </div>
+                  <button data-cart-btn="hosted-planner-pkg" onclick="toggleCartItem('hosted-planner-pkg')"
+                    class="px-5 py-3 rounded-full bg-plum-900 hover:bg-plum-800 text-gold-300 font-semibold text-xs tracking-wide uppercase shadow-card transition cursor-pointer">
+                    Add Hosted Planner ($10,000)
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============================================================== -->
+      <!-- SECTION 4: 30TH ANNIVERSARY HARDCOVER MAGAZINE & TOPIC BIDDING  -->
+      <!-- =============================================================== -->
+      <section id="hardcover-magazine" class="py-16 sm:py-24 bg-plum-900 border-b border-gold-hairline">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <!-- Top Intro + 3D Hardcover Magazine Mockup -->
+          <div class="grid lg:grid-cols-12 gap-10 items-center mb-14">
+            <!-- 3D Hardcover Book Visual (Matched to Uploaded Magazine Cover) -->
+            <div class="lg:col-span-5 flex justify-center">
+              <div class="book-3d w-72 sm:w-80 rounded-r-xl rounded-l-sm overflow-hidden border border-gold-500/50 bg-plum-950 select-none">
+                <div class="relative aspect-[3/4.1] p-6 flex flex-col justify-between bg-gradient-to-b from-[#0C0209] via-[#2A061E] to-[#140410]">
+                  <!-- Magenta Gala Stage Backlight + Golden Ribbon Chandelier SVG -->
+                  <svg class="pointer-events-none absolute inset-0 w-full h-full" viewBox="0 0 300 410" preserveAspectRatio="xMidYMid slice" fill="none">
+                    <rect x="45" y="130" width="210" height="120" fill="url(#stageGlow)" opacity="0.65"/>
+                    <!-- Sweeping Golden Ribbon Chandelier -->
+                    <ellipse cx="145" cy="128" rx="115" ry="26" stroke="url(#goldChandelier)" stroke-width="14" opacity="0.82" transform="rotate(-5 145 128)"/>
+                    <ellipse cx="165" cy="146" rx="92" ry="20" stroke="url(#goldChandelier)" stroke-width="9" opacity="0.72" transform="rotate(6 165 146)"/>
+                    <ellipse cx="135" cy="158" rx="68" ry="14" stroke="#F6DF9A" stroke-width="4" opacity="0.65"/>
+                    <!-- Magenta Light Beams -->
+                    <polygon points="15,85 95,255 15,255" fill="#D9387E" opacity="0.22"/>
+                    <polygon points="285,85 205,255 285,255" fill="#D9387E" opacity="0.22"/>
+                    <!-- Reflective Gala Floor -->
+                    <rect x="0" y="255" width="300" height="155" fill="url(#floorReflect)"/>
+                    <defs>
+                      <radialGradient id="stageGlow" cx="50%" cy="50%" r="60%">
+                        <stop offset="0%" stop-color="#E55A98"/>
+                        <stop offset="100%" stop-color="#140410" stop-opacity="0"/>
+                      </radialGradient>
+                      <linearGradient id="goldChandelier" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0%" stop-color="#A88024"/>
+                        <stop offset="45%" stop-color="#F6DF9A"/>
+                        <stop offset="100%" stop-color="#D4AF37"/>
+                      </linearGradient>
+                      <linearGradient id="floorReflect" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#B81D65" stop-opacity="0.38"/>
+                        <stop offset="50%" stop-color="#1F0718" stop-opacity="0.88"/>
+                        <stop offset="100%" stop-color="#0C0209"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+
+                  <!-- Top Masthead -->
+                  <div class="relative z-10 text-center">
+                    <div class="text-[9px] tracking-[0.34em] uppercase text-ivory-100/90 font-semibold">CANADIAN SPECIAL</div>
+                    <div class="font-editorial text-5xl font-semibold tracking-[0.14em] text-ivory-100 leading-none mt-1">EVENTS</div>
+                    <div class="text-[10px] tracking-[0.42em] uppercase text-ivory-100/90 mt-1">MAGAZINE</div>
+                  </div>
+
+                  <!-- Bottom Cover Typography -->
+                  <div class="relative z-10 text-center space-y-1.5">
+                    <div class="font-editorial text-4xl font-bold tracking-wide text-ivory-100 leading-none">30 YEARS</div>
+                    <div class="font-editorial text-lg tracking-[0.14em] uppercase text-ivory-100/95">OF CANADIAN EVENTS</div>
+                    <div class="flex items-center justify-center gap-2 pt-1">
+                      <span class="w-4 h-px bg-gold-400"></span>
+                      <span class="text-[8.5px] italic tracking-[0.16em] uppercase text-gold-300">THE PEOPLE. THE WORK. THE MEMORIES.</span>
+                      <span class="w-4 h-px bg-gold-400"></span>
+                    </div>
+                    <div class="flex items-center justify-between pt-3 text-[8px] tracking-[0.18em] uppercase text-ivory-200/85 border-t border-gold-500/30">
+                      <span>COMMEMORATIVE HARDCOVER EDITION</span>
+                      <span class="text-gold-300 font-semibold">SPRING 2027</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Magazine Editorial Pitch -->
+            <div class="lg:col-span-7 space-y-5">
+              <div class="text-xs font-semibold tracking-[0.24em] uppercase text-gold-400">04 • Commemorative Collector's Print Edition • Spring 2027</div>
+              <h2 class="font-editorial text-4xl sm:text-5xl font-semibold text-ivory-100 leading-tight">
+                Own the Story in Print.<br />
+                <span class="text-gold-gradient italic">Editorial Topic Bidding &amp; Tribute Pages.</span>
+              </h2>
+              <p class="text-sm sm:text-base text-ivory-200/85 leading-relaxed">
+                Our first hardcover collector's book in two years—a permanent, coffee-table love letter to 30 years of Canadian events. Beyond traditional commemorative ads, category leaders can now <strong>bid on or exclusively lock high-authority editorial feature topics</strong> and choose their exact placement inside the book.
+              </p>
+
+              <!-- Feature Inclusions Bar -->
+              <div class="grid sm:grid-cols-2 gap-3 pt-1">
+                <div class="p-3.5 rounded-xl bg-plum-950/70 border border-gold-hairline text-xs text-ivory-200/90">
+                  <strong class="text-gold-400 block mb-0.5">Category Exclusivity</strong>
+                  Only ONE brand owns each editorial subject matter—zero competing voices on your topic.
+                </div>
+                <div class="p-3.5 rounded-xl bg-plum-950/70 border border-gold-hairline text-xs text-ivory-200/90">
+                  <strong class="text-gold-400 block mb-0.5">Full Editorial Distribution</strong>
+                  4-page produced feature spread, newsletter spotlight, high-res digital reprint license, and 10 hardcover copies.
+                </div>
+              </div>
+
+              <!-- Two Internal Tabs -->
+              <div class="inline-flex flex-wrap gap-2 pt-3">
+                <button onclick="switchMagTab('topics')" id="mag-tab-topics"
+                  class="px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide transition cursor-pointer">
+                  Own or Bid on Editorial Feature Topics (6)
+                </button>
+                <button onclick="switchMagTab('ads')" id="mag-tab-ads"
+                  class="px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide transition cursor-pointer">
+                  Commemorative Print Ad Space &amp; Tribute Pages (5)
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB A: Editorial Topic Bidding Board -->
+          <div id="mag-panel-topics">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5" id="editorial-topics-grid"></div>
+          </div>
+
+          <!-- TAB B: Commemorative Print Ad Space -->
+          <div id="mag-panel-ads" class="hidden">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5" id="print-ads-grid"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============================================================== -->
+      <!-- SECTION 5: THE CSE LIVE! MARKETPLACE (WARM IVORY SECTION)       -->
+      <!-- =============================================================== -->
+      <section id="marketplace" class="bg-ivory-editorial py-16 sm:py-24 border-b border-ivory-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
+            <div>
+              <div class="text-xs font-semibold tracking-[0.24em] uppercase text-peony-600">05 • Curated Exhibit Environments</div>
+              <h2 class="font-editorial text-4xl sm:text-5xl font-bold text-plum-900 mt-1.5">The CSE Live! Marketplace</h2>
+              <p class="text-sm sm:text-base text-plum-900/75 max-w-2xl mt-2.5 leading-relaxed">
+                Elevated brand environments designed for hospitality, product demonstrations, and meaningful conversations—leaving traditional trade show terminology behind.
+              </p>
+            </div>
+            <div class="rounded-xl px-4 py-3 bg-plum-900 text-ivory-100 text-xs max-w-sm border border-gold-500/40">
+              <span class="text-gold-400 font-semibold uppercase tracking-wider block mb-0.5">Included With Every Space</span>
+              Up to 8 staff passes, a dedicated social media introduction, and a 6-month premium CSE directory listing.
+            </div>
+          </div>
+
+          <!-- Conceptual Marketplace Floor Plan Diagram (CSS/SVG) -->
+          <div class="rounded-2xl p-6 sm:p-8 bg-white border border-ivory-300 shadow-card mb-10">
+            <div class="flex flex-wrap items-center justify-between gap-4 mb-5">
+              <div>
+                <h3 class="font-editorial text-2xl font-bold text-plum-900">Proposed Marketplace Configuration</h3>
+                <p class="text-xs text-plum-900/65 mt-0.5">Click any zone on the conceptual diagram to highlight the corresponding space tier below.</p>
+              </div>
+              <div class="flex flex-wrap items-center gap-4 text-xs text-plum-900/80">
+                <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-sm bg-[#B56995]"></span>Perimeter Pop-Ups</span>
+                <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-sm bg-[#E5C1D6] border border-[#B56995]"></span>Back-to-Back Pods</span>
+                <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-sm bg-[#6E1242]"></span>Flagship Islands</span>
+              </div>
+            </div>
+
+            <!-- Responsive Floor Plan Grid -->
+            <div class="p-4 sm:p-6 rounded-xl bg-ivory-50 border border-ivory-300 overflow-x-auto">
+              <div class="min-w-[600px] space-y-5">
+                <!-- Top Perimeter Pop-Ups -->
+                <div class="grid grid-cols-8 gap-2">
+                  <button onclick="highlightSpace('mkt-popup')" class="h-10 rounded-md bg-[#B56995] hover:bg-[#9E507D] text-white text-[10px] font-semibold tracking-wider transition cursor-pointer">POP-UP</button>
+                  <button onclick="highlightSpace('mkt-popup')" class="h-10 rounded-md bg-[#B56995] hover:bg-[#9E507D] text-white text-[10px] font-semibold tracking-wider transition cursor-pointer">POP-UP</button>
+                  <button onclick="highlightSpace('mkt-popup')" class="h-10 rounded-md bg-[#B56995] hover:bg-[#9E507D] text-white text-[10px] font-semibold tracking-wider transition cursor-pointer">POP-UP</button>
+                  <button onclick="highlightSpace('mkt-popup')" class="h-10 rounded-md bg-[#B56995] hover:bg-[#9E507D] text-white text-[10px] font-semibold tracking-wider transition cursor-pointer">POP-UP</button>
+                  <button onclick="highlightSpace('mkt-popup')" class="h-10 rounded-md bg-[#B56995] hover:bg-[#9E507D] text-white text-[10px] font-semibold tracking-wider transition cursor-pointer">POP-UP</button>
+                  <button onclick="highlightSpace('mkt-popup')" class="h-10 rounded-md bg-[#B56995] hover:bg-[#9E507D] text-white text-[10px] font-semibold tracking-wider transition cursor-pointer">POP-UP</button>
+                  <button onclick="highlightSpace('mkt-popup')" class="h-10 rounded-md bg-[#B56995] hover:bg-[#9E507D] text-white text-[10px] font-semibold tracking-wider transition cursor-pointer">POP-UP</button>
+                  <button onclick="highlightSpace('mkt-popup')" class="h-10 rounded-md bg-[#B56995] hover:bg-[#9E507D] text-white text-[10px] font-semibold tracking-wider transition cursor-pointer">POP-UP</button>
+                </div>
+
+                <!-- Middle Floor: Pods + 20x20 Flagship Islands + Circulation -->
+                <div class="grid grid-cols-12 gap-4 items-center">
+                  <!-- Left Pods -->
+                  <div class="col-span-3 space-y-4">
+                    <div class="space-y-1">
+                      <button onclick="highlightSpace('mkt-showcase')" class="w-full h-12 rounded-md bg-[#E8C8DA] border border-[#A85987] hover:bg-[#DFB2CB] text-plum-900 text-xs font-semibold transition cursor-pointer">POD 10×10</button>
+                      <button onclick="highlightSpace('mkt-signature')" class="w-full h-12 rounded-md bg-[#E8C8DA] border border-[#A85987] hover:bg-[#DFB2CB] text-plum-900 text-xs font-semibold transition cursor-pointer">POD 10×20</button>
+                    </div>
+                    <div class="space-y-1">
+                      <button onclick="highlightSpace('mkt-showcase')" class="w-full h-12 rounded-md bg-[#E8C8DA] border border-[#A85987] hover:bg-[#DFB2CB] text-plum-900 text-xs font-semibold transition cursor-pointer">POD 10×10</button>
+                      <button onclick="highlightSpace('mkt-showcase')" class="w-full h-12 rounded-md bg-[#E8C8DA] border border-[#A85987] hover:bg-[#DFB2CB] text-plum-900 text-xs font-semibold transition cursor-pointer">POD 10×10</button>
+                    </div>
+                  </div>
+
+                  <!-- Center Flagship Islands -->
+                  <div class="col-span-4 space-y-4">
+                    <button onclick="highlightSpace('mkt-island')" class="w-full h-26 py-7 rounded-lg bg-[#6E1242] hover:bg-[#570D33] text-ivory-100 border border-gold-500/40 shadow-md transition cursor-pointer flex flex-col items-center justify-center">
+                      <span class="font-editorial text-xl font-bold text-gold-300">20 × 20</span>
+                      <span class="text-[11px] tracking-[0.22em] uppercase mt-0.5">FLAGSHIP ISLAND</span>
+                    </button>
+                    <button onclick="highlightSpace('mkt-island')" class="w-full h-26 py-7 rounded-lg bg-[#6E1242] hover:bg-[#570D33] text-ivory-100 border border-gold-500/40 shadow-md transition cursor-pointer flex flex-col items-center justify-center">
+                      <span class="font-editorial text-xl font-bold text-gold-300">20 × 20</span>
+                      <span class="text-[11px] tracking-[0.22em] uppercase mt-0.5">FLAGSHIP ISLAND</span>
+                    </button>
+                  </div>
+
+                  <!-- Right Pods -->
+                  <div class="col-span-3 space-y-4">
+                    <div class="space-y-1">
+                      <button onclick="highlightSpace('mkt-signature')" class="w-full h-12 rounded-md bg-[#E8C8DA] border border-[#A85987] hover:bg-[#DFB2CB] text-plum-900 text-xs font-semibold transition cursor-pointer">POD 10×20</button>
+                      <button onclick="highlightSpace('mkt-showcase')" class="w-full h-12 rounded-md bg-[#E8C8DA] border border-[#A85987] hover:bg-[#DFB2CB] text-plum-900 text-xs font-semibold transition cursor-pointer">POD 10×10</button>
+                    </div>
+                    <div class="space-y-1">
+                      <button onclick="highlightSpace('mkt-showcase')" class="w-full h-12 rounded-md bg-[#E8C8DA] border border-[#A85987] hover:bg-[#DFB2CB] text-plum-900 text-xs font-semibold transition cursor-pointer">POD 10×10</button>
+                      <button onclick="highlightSpace('mkt-showcase')" class="w-full h-12 rounded-md bg-[#E8C8DA] border border-[#A85987] hover:bg-[#DFB2CB] text-plum-900 text-xs font-semibold transition cursor-pointer">POD 10×10</button>
+                    </div>
+                  </div>
+
+                  <!-- Circulation Corridor Label -->
+                  <div class="col-span-2 flex items-center justify-center">
+                    <div class="text-xs font-semibold tracking-[0.35em] uppercase text-plum-900/45 [writing-mode:vertical-rl] rotate-180">
+                      CIRCULATION CORRIDOR
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Bottom Perimeter Pop-Ups -->
+                <div class="grid grid-cols-8 gap-2">
+                  <button onclick="highlightSpace('mkt-popup')" class="h-10 rounded-md bg-[#B56995] hover:bg-[#9E507D] text-white text-[10px] font-semibold tracking-wider transition cursor-pointer">POP-UP</button>
+                  <button onclick="highlightSpace('mkt-popup')" class="h-10 rounded-md bg-[#B56995] hover:bg-[#9E507D] text-white text-[10px] font-semibold tracking-wider transition cursor-pointer">POP-UP</button>
+                  <button onclick="highlightSpace('mkt-popup')" class="h-10 rounded-md bg-[#B56995] hover:bg-[#9E507D] text-white text-[10px] font-semibold tracking-wider transition cursor-pointer">POP-UP</button>
+                  <button onclick="highlightSpace('mkt-popup')" class="h-10 rounded-md bg-[#B56995] hover:bg-[#9E507D] text-white text-[10px] font-semibold tracking-wider transition cursor-pointer">POP-UP</button>
+                  <button onclick="highlightSpace('mkt-popup')" class="h-10 rounded-md bg-[#B56995] hover:bg-[#9E507D] text-white text-[10px] font-semibold tracking-wider transition cursor-pointer">POP-UP</button>
+                  <button onclick="highlightSpace('mkt-popup')" class="h-10 rounded-md bg-[#B56995] hover:bg-[#9E507D] text-white text-[10px] font-semibold tracking-wider transition cursor-pointer">POP-UP</button>
+                  <button onclick="highlightSpace('mkt-popup')" class="h-10 rounded-md bg-[#B56995] hover:bg-[#9E507D] text-white text-[10px] font-semibold tracking-wider transition cursor-pointer">POP-UP</button>
+                  <button onclick="highlightSpace('mkt-popup')" class="h-10 rounded-md bg-[#B56995] hover:bg-[#9E507D] text-white text-[10px] font-semibold tracking-wider transition cursor-pointer">POP-UP</button>
+                </div>
+              </div>
+            </div>
+
+            <p class="text-xs text-plum-900/65 italic mt-4">
+              Conceptual layout only, not to scale. Placement is assigned on Assignment Day by booking order and exhibitor discovery call.
+            </p>
+          </div>
+
+          <!-- 4 Marketplace Space Cards -->
+          <div id="marketplace-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5"></div>
+        </div>
+      </section>
+
+      <!-- =============================================================== -->
+      <!-- SECTION 6: INTEGRATED MARKETING CAMPAIGNS                       -->
+      <!-- =============================================================== -->
+      <section id="integrated-campaigns" class="py-16 sm:py-24 bg-plum-950 border-b border-gold-hairline">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="text-center max-w-3xl mx-auto mb-12">
+            <div class="text-xs font-semibold tracking-[0.24em] uppercase text-gold-400">06 • Year-Round Content Bundles</div>
+            <h2 class="font-editorial text-4xl sm:text-5xl font-semibold text-ivory-100 mt-1.5">Integrated Marketing Campaigns</h2>
+            <p class="text-sm sm:text-base text-ivory-200/75 mt-2.5 leading-relaxed">
+              CSE Live! and the Gala happen once a year—our editorial authority runs all twelve months. Pair a Showcase Pod with year-round editorial, e-blasts, boosted social, and bonus web presence.
+            </p>
+          </div>
+
+          <!-- 3-Column Comparison Grid -->
+          <div class="grid md:grid-cols-3 gap-6">
+            <!-- 3 Months -->
+            <div class="rounded-2xl p-7 bg-plum-900/80 border border-gold-hairline flex flex-col justify-between">
+              <div>
+                <div class="text-xs font-semibold uppercase tracking-[0.2em] text-gold-400">Quarterly Presence</div>
+                <h3 class="font-editorial text-3xl font-semibold text-ivory-100 mt-1">3-Month Campaign</h3>
+                <div class="font-editorial text-4xl font-bold text-gold-gradient mt-3">$6,200</div>
+                <ul class="mt-6 space-y-3 text-sm text-ivory-200/85 border-t border-gold-hairline pt-5">
+                  <li class="flex justify-between"><span>Editorial w/ newsletter inclusion</span><strong class="text-ivory-100">1</strong></li>
+                  <li class="flex justify-between"><span>Dedicated e-blasts</span><strong class="text-ivory-100">1</strong></li>
+                  <li class="flex justify-between"><span>Boosted social posts</span><strong class="text-ivory-100">3</strong></li>
+                  <li class="flex justify-between"><span>10' × 10' Showcase Pod</span><strong class="text-gold-400">Included</strong></li>
+                  <li class="flex justify-between"><span>Bonus website advertising</span><strong class="text-ivory-100">3 mo.</strong></li>
+                </ul>
+              </div>
+              <button data-cart-btn="camp-3mo" onclick="toggleCartItem('camp-3mo')"
+                class="mt-8 w-full py-3 rounded-full border border-gold-500/60 hover:bg-gold-500 hover:text-plum-950 text-gold-300 font-semibold text-xs uppercase tracking-wider transition cursor-pointer">
+                Select 3-Month Campaign
+              </button>
+            </div>
+
+            <!-- 6 Months (Recommended) -->
+            <div class="rounded-2xl p-7 bg-gradient-to-b from-plum-800 to-plum-900 border-2 border-gold-400/70 shadow-gold flex flex-col justify-between relative">
+              <span class="absolute -top-3 left-1/2 -translate-x-1/2 px-3.5 py-1 rounded-full bg-gold-gradient text-plum-950 text-[10px] font-bold uppercase tracking-[0.2em]">Most Popular</span>
+              <div>
+                <div class="text-xs font-semibold uppercase tracking-[0.2em] text-peach-400">Half-Year Momentum</div>
+                <h3 class="font-editorial text-3xl font-semibold text-ivory-100 mt-1">6-Month Campaign</h3>
+                <div class="font-editorial text-4xl font-bold text-gold-gradient mt-3">$8,950</div>
+                <ul class="mt-6 space-y-3 text-sm text-ivory-200/90 border-t border-gold-hairline pt-5">
+                  <li class="flex justify-between"><span>Editorial w/ newsletter inclusion</span><strong class="text-ivory-100">2</strong></li>
+                  <li class="flex justify-between"><span>Dedicated e-blasts</span><strong class="text-ivory-100">2</strong></li>
+                  <li class="flex justify-between"><span>Boosted social posts</span><strong class="text-ivory-100">6</strong></li>
+                  <li class="flex justify-between"><span>10' × 10' Showcase Pod</span><strong class="text-gold-400">Included</strong></li>
+                  <li class="flex justify-between"><span>Bonus website advertising</span><strong class="text-ivory-100">6 mo.</strong></li>
+                </ul>
+              </div>
+              <button data-cart-btn="camp-6mo" onclick="toggleCartItem('camp-6mo')"
+                class="mt-8 w-full py-3 rounded-full bg-gold-gradient text-plum-950 font-semibold text-xs uppercase tracking-wider shadow-gold hover:brightness-105 transition cursor-pointer">
+                Select 6-Month Campaign
+              </button>
+            </div>
+
+            <!-- 9 Months -->
+            <div class="rounded-2xl p-7 bg-plum-900/80 border border-gold-hairline flex flex-col justify-between">
+              <div>
+                <div class="text-xs font-semibold uppercase tracking-[0.2em] text-gold-400">Full Season Authority</div>
+                <h3 class="font-editorial text-3xl font-semibold text-ivory-100 mt-1">9-Month Campaign</h3>
+                <div class="font-editorial text-4xl font-bold text-gold-gradient mt-3">$11,500</div>
+                <ul class="mt-6 space-y-3 text-sm text-ivory-200/85 border-t border-gold-hairline pt-5">
+                  <li class="flex justify-between"><span>Editorial w/ newsletter inclusion</span><strong class="text-ivory-100">3</strong></li>
+                  <li class="flex justify-between"><span>Dedicated e-blasts</span><strong class="text-ivory-100">3</strong></li>
+                  <li class="flex justify-between"><span>Boosted social posts</span><strong class="text-ivory-100">9</strong></li>
+                  <li class="flex justify-between"><span>10' × 10' Showcase Pod</span><strong class="text-gold-400">Included</strong></li>
+                  <li class="flex justify-between"><span>Bonus website advertising</span><strong class="text-ivory-100">9 mo.</strong></li>
+                </ul>
+              </div>
+              <button data-cart-btn="camp-9mo" onclick="toggleCartItem('camp-9mo')"
+                class="mt-8 w-full py-3 rounded-full border border-gold-500/60 hover:bg-gold-500 hover:text-plum-950 text-gold-300 font-semibold text-xs uppercase tracking-wider transition cursor-pointer">
+                Select 9-Month Campaign
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- CONTAINER B: LIVE SPONSOR PORTAL (Unlocked after checkout OR nav)   -->
+    <!-- =================================================================== -->
+    <section id="sponsor-portal-view" class="hidden bg-velvet-radial min-h-screen py-12 sm:py-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-8">
+        <!-- Back to Prospectus Breadcrumb -->
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <button onclick="toggleSponsorPortal(false)"
+            class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-gold-400 hover:text-gold-300 transition cursor-pointer">
+            &larr; Return to 30th Anniversary Prospectus
+          </button>
+          <div class="flex items-center gap-2.5">
+            <button onclick="openReceiptModal()"
+              class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-gold-500/50 bg-plum-900 text-xs font-semibold text-ivory-100 hover:bg-plum-800 transition cursor-pointer">
+              View Invoice &amp; Agreement Receipt
+            </button>
+          </div>
+        </div>
+
+        <!-- Portal Welcome Header Card -->
+        <div class="rounded-2xl p-6 sm:p-8 bg-plum-900/90 border border-gold-500/45 shadow-luxury">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+            <div>
+              <div class="flex flex-wrap items-center gap-2.5">
+                <span class="px-3 py-1 rounded-full bg-gold-500/20 text-gold-300 text-[10px] font-semibold uppercase tracking-[0.2em]">Private Partner Portal</span>
+                <span id="portal-status-pill" class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-semibold uppercase tracking-[0.18em]">Confirmed • Direct Settlement</span>
+              </div>
+              <h1 class="font-editorial text-3xl sm:text-4xl font-semibold text-ivory-100 mt-3">
+                Welcome, <span id="portal-company-name" class="text-gold-gradient">TD Commercial Events</span>
+              </h1>
+              <p class="text-sm text-ivory-200/80 mt-1">
+                Confirmation <strong id="portal-conf-code" class="text-ivory-100">CSE-2027-3041</strong> &bull; Primary Contact: <span id="portal-contact-name">Sarah Chen</span>
+              </p>
+            </div>
+
+            <!-- Live Onboarding Progress Bar -->
+            <div class="w-full lg:w-80 bg-plum-950/80 rounded-xl p-4 border border-gold-hairline">
+              <div class="flex items-center justify-between text-xs mb-2">
+                <span class="uppercase tracking-wider text-gold-400 font-semibold">Onboarding Progress</span>
+                <span id="portal-progress-pct" class="font-bold text-ivory-100">0%</span>
+              </div>
+              <div class="h-2.5 w-full rounded-full bg-plum-800 overflow-hidden">
+                <div id="portal-progress-bar" class="h-full bg-gold-gradient rounded-full transition-all duration-500" style="width: 0%;"></div>
+              </div>
+              <p id="portal-progress-note" class="text-[11px] text-ivory-200/70 mt-2">Complete deliverables below to lock production readiness.</p>
+            </div>
+          </div>
+
+          <!-- Confirmed Items Strip -->
+          <div class="mt-6 pt-5 border-t border-gold-hairline">
+            <div class="text-[11px] uppercase tracking-[0.2em] text-gold-400 font-semibold mb-2.5">Active 2027 Partnership Selections</div>
+            <div id="portal-items-list" class="flex flex-wrap gap-2"></div>
+          </div>
+        </div>
+
+        <!-- Two-Column Portal Body: Deliverables Checklist + Concierge Sidebar -->
+        <div class="grid lg:grid-cols-12 gap-6 items-start">
+          <!-- Left: Interactive Deliverable Checklist -->
+          <div class="lg:col-span-8 space-y-4">
+            <h2 class="font-editorial text-2xl sm:text-3xl font-semibold text-ivory-100">Your Centralized Deliverable Hub</h2>
+            <p class="text-xs sm:text-sm text-ivory-200/75">No Google Drive links or email attachments required. Submit each milestone directly here—built-in reminders notify your team only for remaining items.</p>
+            <div id="portal-tasks-container" class="space-y-3.5 pt-2"></div>
+          </div>
+
+          <!-- Right: Editorial Concierge Note & Timeline -->
+          <div class="lg:col-span-4 space-y-5">
+            <div class="rounded-2xl p-6 bg-ivory-100 text-plum-900 border border-gold-500/40 shadow-card">
+              <div class="text-[10px] font-bold uppercase tracking-[0.22em] text-peony-600">White-Glove Editorial Concierge</div>
+              <h3 class="font-editorial text-2xl font-bold text-plum-900 mt-1.5">Bespoke Content, Zero Admin Friction</h3>
+              <p class="text-xs sm:text-sm text-plum-900/80 leading-relaxed mt-2.5">
+                While all logos, bios, pass lists, and deadlines live cleanly in this portal, CSE's senior editorial team will reach out personally to schedule your bespoke story interview and creative direction call.
+              </p>
+              <div class="mt-4 pt-4 border-t border-ivory-300 text-xs space-y-1.5">
+                <div class="flex justify-between"><span class="text-plum-900/65">Editorial Desk</span><strong>editorial@canadianspecialevents.com</strong></div>
+                <div class="flex justify-between"><span class="text-plum-900/65">Partner Concierge</span><strong>partners@canadianspecialevents.com</strong></div>
+              </div>
+            </div>
+
+            <div class="rounded-2xl p-6 bg-plum-900/80 border border-gold-hairline">
+              <div class="text-[11px] font-semibold uppercase tracking-[0.2em] text-gold-400">Key 2027 Milestones</div>
+              <ol class="mt-4 space-y-3 text-xs text-ivory-200/85">
+                <li class="flex gap-3"><span class="text-gold-400 font-semibold shrink-0">Jan 15</span><span>Brand logos &amp; vector files locked for print</span></li>
+                <li class="flex gap-3"><span class="text-gold-400 font-semibold shrink-0">Feb 05</span><span>Hardcover Magazine editorial kickoff</span></li>
+                <li class="flex gap-3"><span class="text-gold-400 font-semibold shrink-0">Mar 15</span><span>Staff &amp; VIP Gala guest list finalization</span></li>
+                <li class="flex gap-3"><span class="text-gold-400 font-semibold shrink-0">Apr 28</span><span>Canadian Event Awards 30th Anniversary Gala</span></li>
+                <li class="flex gap-3"><span class="text-gold-400 font-semibold shrink-0">May 10</span><span>Post-Event Media Vault &amp; Impact Report unlocks</span></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- CONTAINER C: STACY'S EXECUTIVE REVENUE & ADMIN TOUR (?view=executive)-->
+    <!-- =================================================================== -->
+    <section id="executive-tour-view" class="hidden">
+      <!-- Executive Hero -->
+      <div class="bg-velvet-radial border-b border-gold-hairline py-14 sm:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="max-w-3xl space-y-4">
+            <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gold-500/20 border border-gold-400/50 text-[11px] font-semibold tracking-[0.22em] uppercase text-gold-300">
+              Executive Walkthrough • Prepared for Stacy &amp; Jason
+            </span>
+            <h1 class="font-editorial text-4xl sm:text-5xl font-semibold text-ivory-100 leading-tight">
+              How This Unified Partner Hub<br />
+              <span class="text-gold-gradient italic">Grows Revenue &amp; Eliminates Admin Drag</span>
+            </h1>
+            <p class="text-sm sm:text-base text-ivory-200/80 leading-relaxed">
+              One CSE-owned link turns cold corporate prospects and returning sponsors into confirmed invoices—while capturing new high-margin magazine editorial revenue and cutting dozens of manual follow-up hours.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1. Interactive 30th Anniversary Revenue Simulator -->
+      <div class="bg-ivory-editorial py-14 sm:py-20 border-b border-ivory-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="mb-8">
+            <div class="text-xs font-semibold tracking-[0.22em] uppercase text-peony-600">01 • Interactive Revenue Model</div>
+            <h2 class="font-editorial text-3xl sm:text-4xl font-bold text-plum-900 mt-1">30th Anniversary Revenue Simulator</h2>
+            <p class="text-sm text-plum-900/75 mt-1">Adjust target closes across each revenue stream to model total cash sponsorship revenue and guaranteed qualified conference buyers.</p>
+          </div>
+
+          <div class="grid lg:grid-cols-12 gap-8 items-start">
+            <!-- Sliders Panel -->
+            <div class="lg:col-span-7 rounded-2xl p-6 sm:p-8 bg-plum-900 text-ivory-100 shadow-luxury border border-gold-500/40 space-y-6">
+              <div>
+                <div class="flex justify-between text-sm mb-2">
+                  <span class="font-medium">Gala &amp; CSE Live! Flagship Sponsorships <span class="text-xs text-ivory-200/60">(Avg. $15,000)</span></span>
+                  <strong id="sim-gala-val" class="text-gold-400">6 deals ($90,000)</strong>
+                </div>
+                <input type="range" id="sim-gala" min="1" max="15" value="6" oninput="updateSimulator()" class="cse-slider" />
+              </div>
+
+              <div>
+                <div class="flex justify-between text-sm mb-2">
+                  <span class="font-medium">Hosted Planner Partnerships <span class="text-xs text-ivory-200/60">($10,000 each • 10 Buyers/deal)</span></span>
+                  <strong id="sim-hosted-val" class="text-gold-400">10 deals ($100,000)</strong>
+                </div>
+                <input type="range" id="sim-hosted" min="0" max="20" value="10" oninput="updateSimulator()" class="cse-slider" />
+              </div>
+
+              <div>
+                <div class="flex justify-between text-sm mb-2">
+                  <span class="font-medium">Hardcover Magazine Editorial Topics &amp; Tribute Ads <span class="text-xs text-ivory-200/60">(Avg. $7,500)</span></span>
+                  <strong id="sim-mag-val" class="text-gold-400">12 placements ($90,000)</strong>
+                </div>
+                <input type="range" id="sim-mag" min="0" max="25" value="12" oninput="updateSimulator()" class="cse-slider" />
+              </div>
+
+              <div>
+                <div class="flex justify-between text-sm mb-2">
+                  <span class="font-medium">Marketplace Pods &amp; Integrated Campaigns <span class="text-xs text-ivory-200/60">(Avg. $6,250)</span></span>
+                  <strong id="sim-mkt-val" class="text-gold-400">18 spaces ($112,500)</strong>
+                </div>
+                <input type="range" id="sim-mkt" min="0" max="40" value="18" oninput="updateSimulator()" class="cse-slider" />
+              </div>
+
+              <div>
+                <div class="flex justify-between text-sm mb-2">
+                  <span class="font-medium">Individual Award Category Sponsors <span class="text-xs text-ivory-200/60">($3,995 each)</span></span>
+                  <strong id="sim-cat-val" class="text-gold-400">10 categories ($39,950)</strong>
+                </div>
+                <input type="range" id="sim-cat" min="0" max="24" value="10" oninput="updateSimulator()" class="cse-slider" />
+              </div>
+            </div>
+
+            <!-- Live Projected Output Cards -->
+            <div class="lg:col-span-5 grid sm:grid-cols-2 gap-4">
+              <div class="sm:col-span-2 rounded-2xl p-6 bg-plum-950 text-ivory-100 border border-gold-400/60 shadow-gold">
+                <div class="text-[11px] uppercase tracking-[0.22em] text-gold-400 font-semibold">Projected 30th Anniversary Total</div>
+                <div id="sim-total-rev" class="font-editorial text-5xl sm:text-6xl font-bold text-gold-gradient mt-1">$432,450</div>
+                <div id="sim-lift-note" class="text-xs text-emerald-300 mt-2 font-medium">+$182,450 incremental cash lift over prior $250K baseline</div>
+              </div>
+
+              <div class="rounded-2xl p-5 bg-white border border-ivory-300 shadow-card">
+                <div class="text-[10px] font-bold uppercase tracking-[0.18em] text-peony-600">Conference Attendance Engine</div>
+                <div id="sim-buyers-count" class="font-editorial text-4xl font-bold text-plum-900 mt-1">100</div>
+                <div class="text-xs text-plum-900/75 mt-1">Qualified buyers filled in the conference room without selling single tickets</div>
+              </div>
+
+              <div class="rounded-2xl p-5 bg-white border border-ivory-300 shadow-card">
+                <div class="text-[10px] font-bold uppercase tracking-[0.18em] text-peony-600">Platform Surcharges Saved</div>
+                <div id="sim-fees-saved" class="font-editorial text-4xl font-bold text-plum-900 mt-1">$8,649</div>
+                <div class="text-xs text-plum-900/75 mt-1">Retained by eliminating 2% third-party platform surcharges on sponsorships</div>
+              </div>
+
+              <div class="sm:col-span-2 rounded-2xl p-5 bg-white border border-ivory-300 shadow-card">
+                <div class="text-[10px] font-bold uppercase tracking-[0.18em] text-plum-900/60">New Print Revenue Category</div>
+                <p class="text-xs text-plum-900/80 mt-1.5 leading-relaxed">
+                  Editorial Topic Ownership lets competing AV, catering, venue, and decor leaders <strong>bid for exclusive category authority</strong>—unlocking high-margin print revenue that did not exist in prior years.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Admin Hours & Fee Savings Breakdown -->
+      <div class="py-14 sm:py-20 bg-plum-950 border-b border-gold-hairline">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="mb-8">
+            <div class="text-xs font-semibold tracking-[0.22em] uppercase text-gold-400">02 • Operational Transformation</div>
+            <h2 class="font-editorial text-3xl sm:text-4xl font-semibold text-ivory-100 mt-1">Admin Hours &amp; Data Ownership Comparison</h2>
+          </div>
+
+          <div class="overflow-x-auto rounded-2xl border border-gold-hairline bg-plum-900/70">
+            <table class="w-full text-left border-collapse min-w-[680px]">
+              <thead>
+                <tr class="border-b border-gold-hairline bg-plum-950/90 text-[11px] uppercase tracking-[0.2em] text-gold-400">
+                  <th class="p-4 sm:p-5">Workflow Area</th>
+                  <th class="p-4 sm:p-5">Previous Multi-Step Process</th>
+                  <th class="p-4 sm:p-5">New Centralized CSE Partner Hub</th>
+                  <th class="p-4 sm:p-5 text-right">Impact</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-white/10 text-sm">
+                <tr>
+                  <td class="p-4 sm:p-5 font-semibold text-ivory-100">Logo, Bio &amp; Asset Collection</td>
+                  <td class="p-4 sm:p-5 text-ivory-200/65">Chasing assets across 60+ individual follow-up emails and manual Google Drive folders.</td>
+                  <td class="p-4 sm:p-5 text-ivory-100">Single private Sponsor Portal with guided upload slots, clear due dates, and built-in reminders.</td>
+                  <td class="p-4 sm:p-5 text-right font-semibold text-gold-400">~35 hrs saved</td>
+                </tr>
+                <tr>
+                  <td class="p-4 sm:p-5 font-semibold text-ivory-100">Prospectus to Settlement</td>
+                  <td class="p-4 sm:p-5 text-ivory-200/65">Static PDF attachment &rarr; email reply &rarr; separate contract &rarr; separate payment link.</td>
+                  <td class="p-4 sm:p-5 text-ivory-100">One live link: explore tiers &rarr; build package &rarr; pay online or generate Net 30 invoice &rarr; instant portal access.</td>
+                  <td class="p-4 sm:p-5 text-right font-semibold text-gold-400">2x faster close</td>
+                </tr>
+                <tr>
+                  <td class="p-4 sm:p-5 font-semibold text-ivory-100">Fees &amp; Data Ownership</td>
+                  <td class="p-4 sm:p-5 text-ivory-200/65">2%+ third-party platform surcharges and sponsor/attendee contact data sitting on outside servers.</td>
+                  <td class="p-4 sm:p-5 text-ivory-100">Direct settlement with 0% extra platform markups and 100% CSE-owned sponsor &amp; attendee data.</td>
+                  <td class="p-4 sm:p-5 text-right font-semibold text-gold-400">100% Owned</td>
+                </tr>
+                <tr>
+                  <td class="p-4 sm:p-5 font-semibold text-ivory-100">Targeted Outreach</td>
+                  <td class="p-4 sm:p-5 text-ivory-200/65">Same generic deck sent to both loyal 10-year sponsors and brand-new corporate prospects.</td>
+                  <td class="p-4 sm:p-5 text-ivory-100">Two tailored live URLs from one hosted hub: Returning Partner Upgrade vs. First-Time Prospect Edition.</td>
+                  <td class="p-4 sm:p-5 text-right font-semibold text-gold-400">Higher conversion</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Ready-to-Send Direct Share Links Card -->
+      <div class="py-14 sm:py-20 bg-plum-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="mb-8">
+            <div class="text-xs font-semibold tracking-[0.22em] uppercase text-gold-400">03 • Ready for Monday Launch</div>
+            <h2 class="font-editorial text-3xl sm:text-4xl font-semibold text-ivory-100 mt-1">Two Tailored Links. One Hosted Hub.</h2>
+            <p class="text-sm text-ivory-200/75 mt-1">Send the right story to the right buyer—both routes run off this single hosted link.</p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <!-- Prospect Link Card -->
+            <div class="rounded-2xl p-6 sm:p-7 bg-plum-950 border border-gold-500/40 space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-3 py-1 rounded-full bg-peony-600/25 text-peach-300 text-[10px] font-semibold uppercase tracking-[0.2em]">Cold &amp; New Outreach</span>
+                <span class="text-xs font-mono text-gold-400">?view=prospect</span>
+              </div>
+              <h3 class="font-editorial text-2xl font-semibold text-ivory-100">New Prospect Partner Link</h3>
+              <p class="text-xs sm:text-sm text-ivory-200/75 leading-relaxed">
+                Designed for banks, insurance brands, venues, destinations, and suppliers who have never sponsored CSE before. Leads with "Be Seen. Be Experienced. Be Remembered." and the interactive Goal Selector.
+              </p>
+              <div id="share-url-prospect" class="p-3 rounded-lg bg-plum-900 border border-white/10 text-xs font-mono text-ivory-200/80 truncate"></div>
+              <div class="flex flex-wrap gap-2.5 pt-1">
+                <button onclick="switchView('prospect')" class="px-4 py-2.5 rounded-full bg-gold-gradient text-plum-950 text-xs font-semibold cursor-pointer hover:brightness-105 transition">Preview Prospect Link</button>
+                <button onclick="copySpecificLink('prospect')" class="px-4 py-2.5 rounded-full border border-gold-500/50 text-gold-300 text-xs font-semibold cursor-pointer hover:bg-plum-800 transition">Copy Prospect URL</button>
+              </div>
+            </div>
+
+            <!-- Returning Link Card -->
+            <div class="rounded-2xl p-6 sm:p-7 bg-plum-950 border border-gold-500/40 space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-3 py-1 rounded-full bg-gold-500/20 text-gold-300 text-[10px] font-semibold uppercase tracking-[0.2em]">Past Sponsors &amp; Exhibitors</span>
+                <span class="text-xs font-mono text-gold-400">?view=returning</span>
+              </div>
+              <h3 class="font-editorial text-2xl font-semibold text-ivory-100">Returning Partner Priority Link</h3>
+              <p class="text-xs sm:text-sm text-ivory-200/75 leading-relaxed">
+                Designed for past CSE sponsors, exhibitors, and in-kind partners. Leads with "Welcome Back to Year 30," the 5-card comparison of what improved from last year, and quick upgrade prompts.
+              </p>
+              <div id="share-url-returning" class="p-3 rounded-lg bg-plum-900 border border-white/10 text-xs font-mono text-ivory-200/80 truncate"></div>
+              <div class="flex flex-wrap gap-2.5 pt-1">
+                <button onclick="switchView('returning')" class="px-4 py-2.5 rounded-full bg-gold-gradient text-plum-950 text-xs font-semibold cursor-pointer hover:brightness-105 transition">Preview Returning Link</button>
+                <button onclick="copySpecificLink('returning')" class="px-4 py-2.5 rounded-full border border-gold-500/50 text-gold-300 text-xs font-semibold cursor-pointer hover:bg-plum-800 transition">Copy Returning URL</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- FOOTER (With Subtle Chairlift Attribution)                            -->
+  <!-- ===================================================================== -->
+  <footer class="bg-plum-950 border-t border-gold-hairline py-10 pb-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-ivory-200/65">
+      <div class="text-center sm:text-left">
+        <div class="font-editorial text-lg text-ivory-100 font-semibold">Canadian Special Events &bull; 30th Anniversary Partner Hub</div>
+        <div class="mt-0.5">Canadian Event Awards (April 28, 2027) &bull; CSE Live! &bull; Commemorative Hardcover Edition (Spring 2027)</div>
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="text-ivory-200/45 tracking-wide">Powered by Chairlift</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- STICKY FLOATING PARTNERSHIP SUMMARY BAR                               -->
+  <!-- ===================================================================== -->
+  <div id="sticky-cart-bar" class="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 w-[94%] max-w-4xl transition-all duration-300">
+    <div class="rounded-2xl bg-plum-950/95 backdrop-blur-md border border-gold-500/55 shadow-luxury px-4 sm:px-6 py-3.5 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3.5">
+        <div class="w-10 h-10 rounded-full bg-gold-500/15 border border-gold-400/50 flex items-center justify-center text-gold-300 font-bold text-sm" id="cart-count-badge">0</div>
+        <div>
+          <div class="text-[10px] uppercase tracking-[0.2em] text-gold-400 font-semibold">Your 30th Anniversary Partnership</div>
+          <div class="flex items-baseline gap-2.5">
+            <span id="cart-total-display" class="font-editorial text-2xl sm:text-3xl font-bold text-ivory-100">$0</span>
+            <span id="cart-sub-note" class="text-xs text-ivory-200/65 hidden sm:inline">Select opportunities above to build your package</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2.5 ml-auto">
+        <button id="cart-drawer-toggle" onclick="openCheckoutModal()"
+          class="px-5 py-2.5 rounded-full bg-gold-gradient text-plum-950 font-semibold text-xs uppercase tracking-wider shadow-gold hover:brightness-105 transition cursor-pointer">
+          Review &amp; Confirm Partnership &rarr;
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 1: EDITORIAL TOPIC BIDDING & PLACEMENT SELECTOR                 -->
+  <!-- ===================================================================== -->
+  <div id="bid-modal" class="hidden fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+    <div class="w-full max-w-xl rounded-2xl bg-plum-900 border border-gold-500/50 shadow-luxury overflow-hidden my-auto">
+      <div class="p-6 border-b border-gold-hairline flex items-start justify-between gap-4 bg-plum-950/80">
+        <div>
+          <div class="text-[10px] font-semibold uppercase tracking-[0.22em] text-gold-400">Spring 2027 Commemorative Hardcover Edition</div>
+          <h3 id="bid-modal-title" class="font-editorial text-2xl sm:text-3xl font-semibold text-ivory-100 mt-1">Topic Title</h3>
+          <p id="bid-modal-status" class="text-xs text-peach-400 mt-1"></p>
+        </div>
+        <button onclick="closeBidModal()" class="p-1.5 rounded-full hover:bg-plum-800 text-ivory-200/75 cursor-pointer">&times;</button>
+      </div>
+
+      <div class="p-6 space-y-5">
+        <!-- Placement Tier Selector -->
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-[0.18em] text-gold-400 mb-2.5">1. Choose Your Placement Inside the Book</label>
+          <div class="grid sm:grid-cols-2 gap-2.5" id="placement-options"></div>
+        </div>
+
+        <!-- Bid vs Buy-It-Now -->
+        <div class="grid sm:grid-cols-2 gap-4 pt-2 border-t border-gold-hairline">
+          <!-- Place Custom Bid -->
+          <div class="rounded-xl p-4 bg-plum-950/80 border border-gold-hairline flex flex-col justify-between space-y-3">
+            <div>
+              <div class="text-[10px] font-semibold uppercase tracking-[0.18em] text-ivory-200/70">Option A • Competitive Bid</div>
+              <div class="font-editorial text-xl font-semibold text-ivory-100 mt-0.5">Place Topic Bid</div>
+              <label class="block text-[11px] text-ivory-200/70 mt-2">Your Bid Amount (CAD)</label>
+              <input type="number" id="custom-bid-input" step="250"
+                class="mt-1 w-full px-3 py-2 rounded-lg bg-plum-900 border border-gold-500/40 text-ivory-100 text-sm font-semibold focus:outline-none focus:border-gold-400" />
+              <p id="min-bid-hint" class="text-[10px] text-ivory-200/60 mt-1"></p>
+            </div>
+            <button onclick="submitTopicSelection('bid')"
+              class="w-full py-2.5 rounded-full border border-gold-400 text-gold-300 hover:bg-gold-500 hover:text-plum-950 text-xs font-semibold uppercase tracking-wider transition cursor-pointer">
+              Place Custom Bid
+            </button>
+          </div>
+
+          <!-- Buy-It-Now Exclusive Lock -->
+          <div class="rounded-xl p-4 bg-gradient-to-b from-peony-700/30 to-plum-950 border border-gold-400/70 flex flex-col justify-between space-y-3">
+            <div>
+              <div class="text-[10px] font-semibold uppercase tracking-[0.18em] text-gold-300">Option B • Instant Exclusivity</div>
+              <div class="font-editorial text-xl font-semibold text-ivory-100 mt-0.5">Lock Exclusive Category</div>
+              <div id="bin-price-display" class="font-editorial text-3xl font-bold text-gold-gradient mt-2">$9,500</div>
+              <p class="text-[11px] text-ivory-200/75 mt-1">Immediately removes this topic from bidding and reserves 4-page category ownership.</p>
+            </div>
+            <button onclick="submitTopicSelection('lock')"
+              class="w-full py-2.5 rounded-full bg-gold-gradient text-plum-950 text-xs font-semibold uppercase tracking-wider shadow-gold hover:brightness-105 transition cursor-pointer">
+              Lock Category Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 2: CONFIRMATION, SETTLEMENT & INSTANT INVOICE                   -->
+  <!-- ===================================================================== -->
+  <div id="checkout-modal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+    <div class="w-full max-w-2xl rounded-2xl bg-ivory-100 text-plum-900 shadow-luxury overflow-hidden my-auto border border-gold-500/50">
+      <!-- Modal Header -->
+      <div class="p-6 bg-plum-950 text-ivory-100 flex items-center justify-between gap-4 border-b border-gold-500/40">
+        <div>
+          <div class="text-[10px] font-semibold uppercase tracking-[0.22em] text-gold-400">Direct Settlement • Zero Platform Surcharges</div>
+          <h3 class="font-editorial text-2xl sm:text-3xl font-semibold mt-0.5">Review &amp; Confirm Partnership</h3>
+        </div>
+        <button onclick="closeCheckoutModal()" class="text-2xl leading-none text-ivory-200/75 hover:text-ivory-100 cursor-pointer">&times;</button>
+      </div>
+
+      <!-- Step 1: Review & Details Form -->
+      <div id="checkout-step-form" class="p-6 space-y-6 max-h-[78vh] overflow-y-auto">
+        <!-- Selected Items List -->
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold uppercase tracking-[0.18em] text-peony-600">Selected Opportunities</span>
+            <span id="modal-total-top" class="font-editorial text-2xl font-bold text-plum-900">$0</span>
+          </div>
+          <div id="checkout-items-list" class="space-y-2"></div>
+        </div>
+
+        <!-- Partner Details -->
+        <div class="grid sm:grid-cols-2 gap-3.5 pt-4 border-t border-ivory-300">
+          <div>
+            <label class="block text-[11px] font-semibold uppercase tracking-wider text-plum-900/70 mb-1">Company / Brand Name</label>
+            <input id="input-company" type="text" class="w-full px-3.5 py-2.5 rounded-lg bg-white border border-ivory-300 text-sm text-plum-900 focus:outline-none focus:border-peony-600" />
+          </div>
+          <div>
+            <label class="block text-[11px] font-semibold uppercase tracking-wider text-plum-900/70 mb-1">Primary Contact Name</label>
+            <input id="input-contact" type="text" class="w-full px-3.5 py-2.5 rounded-lg bg-white border border-ivory-300 text-sm text-plum-900 focus:outline-none focus:border-peony-600" />
+          </div>
+          <div>
+            <label class="block text-[11px] font-semibold uppercase tracking-wider text-plum-900/70 mb-1">Work Email</label>
+            <input id="input-email" type="email" class="w-full px-3.5 py-2.5 rounded-lg bg-white border border-ivory-300 text-sm text-plum-900 focus:outline-none focus:border-peony-600" />
+          </div>
+          <div>
+            <label class="block text-[11px] font-semibold uppercase tracking-wider text-plum-900/70 mb-1">PO Number (Optional)</label>
+            <input id="input-po" type="text" placeholder="e.g. PO-2027-884" class="w-full px-3.5 py-2.5 rounded-lg bg-white border border-ivory-300 text-sm text-plum-900 focus:outline-none focus:border-peony-600" />
+          </div>
+        </div>
+
+        <!-- Settlement Method -->
+        <div class="pt-4 border-t border-ivory-300">
+          <div class="text-xs font-bold uppercase tracking-[0.18em] text-peony-600 mb-2.5">Settlement Option</div>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <label class="cursor-pointer">
+              <input type="radio" name="settlement" value="online" checked class="peer sr-only" />
+              <div class="p-3.5 rounded-xl bg-white border-2 border-ivory-300 peer-checked:border-plum-900 peer-checked:bg-ivory-50 transition">
+                <div class="text-xs font-bold text-plum-900">Pay Now Online</div>
+                <div class="text-[11px] text-plum-900/70 mt-0.5">Direct Card / EFT — Instant Confirmation</div>
+              </div>
+            </label>
+            <label class="cursor-pointer">
+              <input type="radio" name="settlement" value="invoice" class="peer sr-only" />
+              <div class="p-3.5 rounded-xl bg-white border-2 border-ivory-300 peer-checked:border-plum-900 peer-checked:bg-ivory-50 transition">
+                <div class="text-xs font-bold text-plum-900">Generate Net 30 Invoice</div>
+                <div class="text-[11px] text-plum-900/70 mt-0.5">Instant Official Invoice &amp; Lock Category Hold</div>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-ivory-300">
+          <p class="text-[11px] text-plum-900/65 max-w-xs">Confirming generates your official receipt and immediately unlocks your private CSE Partner Portal.</p>
+          <button onclick="confirmPartnership()"
+            class="px-6 py-3.5 rounded-full bg-plum-900 hover:bg-plum-800 text-gold-300 font-semibold text-xs uppercase tracking-wider shadow-card transition cursor-pointer">
+            Confirm &amp; Enter Sponsor Portal &rarr;
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 2: Official Confirmation Receipt & Portal Unlock -->
+      <div id="checkout-step-receipt" class="hidden p-6 space-y-5 max-h-[78vh] overflow-y-auto">
+        <div id="printable-receipt" class="rounded-xl p-6 bg-white border border-ivory-300 space-y-4">
+          <div class="flex flex-wrap items-start justify-between gap-4 pb-4 border-b border-ivory-300">
+            <div>
+              <div class="text-[10px] font-bold uppercase tracking-[0.22em] text-peony-600">Official Partnership Confirmation &amp; Invoice</div>
+              <h4 class="font-editorial text-2xl font-bold text-plum-900 mt-0.5">Canadian Special Events — 30th Anniversary</h4>
+              <div class="text-xs text-plum-900/70 mt-0.5">April 28, 2027 Gala &bull; CSE Live! &bull; Spring 2027 Hardcover Edition</div>
+            </div>
+            <div class="text-right">
+              <div id="receipt-conf-id" class="font-mono text-sm font-bold text-plum-900">CSE-2027-3041</div>
+              <div id="receipt-status-badge" class="inline-block mt-1 px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-bold uppercase">Paid Online</div>
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-3 text-xs">
+            <div><span class="text-plum-900/60">Partner Brand:</span> <strong id="receipt-company"></strong></div>
+            <div><span class="text-plum-900/60">Primary Contact:</span> <strong id="receipt-contact"></strong></div>
+            <div><span class="text-plum-900/60">Email:</span> <strong id="receipt-email"></strong></div>
+            <div><span class="text-plum-900/60">PO Reference:</span> <strong id="receipt-po"></strong></div>
+          </div>
+
+          <div id="receipt-line-items" class="divide-y divide-ivory-200 border-t border-b border-ivory-300 py-2 text-xs"></div>
+
+          <div class="flex items-center justify-between pt-1">
+            <span class="text-xs font-semibold uppercase tracking-wider text-plum-900/70">Total Investment (CAD, + applicable HST)</span>
+            <span id="receipt-total" class="font-editorial text-3xl font-bold text-plum-900">$0</span>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <button onclick="window.print()"
+            class="px-5 py-2.5 rounded-full border border-plum-900/30 text-plum-900 hover:bg-ivory-200 text-xs font-semibold uppercase tracking-wider transition cursor-pointer">
+            Print / Save PDF Invoice
+          </button>
+          <button onclick="enterUnlockedPortal()"
+            class="px-6 py-3 rounded-full bg-plum-900 hover:bg-plum-800 text-gold-300 text-xs font-semibold uppercase tracking-wider shadow-card transition cursor-pointer">
+            Open Live Sponsor Portal &rarr;
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- TOAST NOTIFICATION                                                    -->
+  <!-- ===================================================================== -->
+  <div id="toast" class="pointer-events-none fixed top-20 right-4 z-[60] opacity-0 translate-y-2 transition-all duration-300">
+    <div class="px-4 py-2.5 rounded-xl bg-plum-950 border border-gold-400/70 text-ivory-100 text-xs font-medium shadow-luxury flex items-center gap-2">
+      <span class="w-2 h-2 rounded-full bg-gold-400"></span>
+      <span id="toast-message">Action saved</span>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- APPLICATION LOGIC (Self-Contained, Zero External JS Dependencies)     -->
+  <!-- ===================================================================== -->
+  <script>
+    // =========================================================================
+    // 1. CATALOG DATA (Matched Strictly to CSE's 30th Anniversary Media Kit)
+    // =========================================================================
+    const AWARD_CATEGORIES = [
+      'Best Corporate Event',
+      'Best Event Design & Decor',
+      'Best Catering & Culinary Experience',
+      'Best AV & Live Production',
+      'Best Conference or Convention',
+      'Best Brand Activation',
+      'Best Wedding Experience',
+      'Canadian Event Producer of the Year'
+    ];
+
+    const GALA_ITEMS = [
+      {
+        id: 'gala-presenting',
+        name: 'Presenting Partner',
+        section: 'Canadian Event Awards Gala',
+        price: 35000,
+        badge: 'Title Ownership',
+        desc: 'Premier co-branding across the entire national awards launch, finalists campaign, Gala stage, and post-event media.'
+      },
+      {
+        id: 'gala-tribute-film',
+        name: '30th Anniversary Tribute Film Partner',
+        section: 'Canadian Event Awards Gala',
+        price: 15000,
+        badge: 'Flagship Legacy',
+        featured: true,
+        desc: 'Exclusive presenting ownership of the 30-year cinematic tribute film premiered at the Gala, screened at CSE Live!, and distributed for 60 days.'
+      },
+      {
+        id: 'gala-vip-cocktail',
+        name: 'VIP Cocktail Reception Partner',
+        section: 'Canadian Event Awards Gala',
+        price: 12500,
+        badge: 'Hospitality',
+        desc: 'Host Canada\'s event leadership during the pre-Gala VIP reception with signature cocktail branding and welcome remarks.'
+      },
+      {
+        id: 'gala-portfolio',
+        name: 'Awards Portfolio Partner',
+        section: 'Canadian Event Awards Gala',
+        price: 10000,
+        badge: 'Prestige',
+        desc: 'Own the official Gala winner portfolio and finalists showcase across digital announcements and on-site presentation.'
+      },
+      {
+        id: 'gala-afterparty',
+        name: 'Gala After Party Partner',
+        section: 'Canadian Event Awards Gala',
+        price: 10000,
+        badge: 'Experience',
+        desc: 'Close the Night of Nights in style as official host of the 30th Anniversary celebration after-party.'
+      },
+      {
+        id: 'gala-redcarpet',
+        name: 'Red Carpet Experience Partner',
+        section: 'Canadian Event Awards Gala',
+        price: 7500,
+        badge: 'High Visibility',
+        desc: 'Capture every arrival photo and social share with exclusive step-and-repeat and red carpet lounge ownership.'
+      },
+      {
+        id: 'gala-champagne',
+        name: 'Champagne Toast Partner',
+        section: 'Canadian Event Awards Gala',
+        price: 5000,
+        badge: 'Main Stage Moment',
+        desc: 'Lead the signature 30th Anniversary champagne toast from the Gala main stage to the entire ballroom.'
+      },
+      {
+        id: 'gala-category',
+        name: 'Individual Award Category Partner',
+        section: 'Canadian Event Awards Gala',
+        price: 3995,
+        badge: 'Category Exclusive',
+        hasCategoryPicker: true,
+        desc: 'Present the trophy live on stage, own category branding throughout nominations and finalists, and join VIP Gala seating.'
+      }
+    ];
+
+    const CSE_LIVE_ITEMS = [
+      { id: 'live-presenting', name: 'Presenting Partner', price: 35000, type: 'brand', desc: 'Headline ownership across CSE Live! conference, marketplace, and all national marketing communications.' },
+      { id: 'live-marketplace', name: 'EventFest Marketplace Partner', price: 20000, type: 'experience', desc: 'Own the heartbeat of the show floor with flagship entrance archway, lounge presence, and marketplace branding.' },
+      { id: 'live-keynote', name: 'Keynote & Lunch Partner', price: 15000, type: 'hospitality', desc: 'Introduce the flagship keynote speaker and host the seated industry leadership luncheon.' },
+      { id: 'live-reception', name: 'Signature Networking Reception Partner', price: 12500, type: 'hospitality', desc: 'Host the marquee evening networking reception connecting planners, agencies, and national suppliers.' },
+      { id: 'live-hosted', name: 'Hosted Planner Partner', price: 10000, type: 'hospitality', desc: 'Curated hospitality and guaranteed access to 10 hand-selected event buyers with private reception.' },
+      { id: 'live-mainstage', name: 'Main Stage Partner', price: 10000, type: 'experience', desc: 'Command visual prominence across every plenary session, speaker intro, and stage screen moment.' },
+      { id: 'live-lounge', name: 'Creative Experience & Lounge Partner', price: 7500, type: 'experience', desc: 'Design and host an immersive branded hospitality lounge right inside the CSE Live! environment.' },
+      { id: 'live-morning-coffee', name: 'Morning Coffee Experience Partner', price: 5000, type: 'hospitality', desc: 'Own the high-traffic morning barista arrival moment with branded cups, signage, and sampling.' },
+      { id: 'live-registration', name: 'Registration Partner', price: 5000, type: 'brand', desc: 'Be the first brand every attendee meets at check-in, confirmation emails, and registration signage.' },
+      { id: 'live-education', name: 'Education Session Partner', price: 3500, type: 'brand', desc: 'Align your brand with an industry education session including stage introduction and thought-leadership positioning.' },
+      { id: 'live-coffee-break', name: 'Coffee Break Partner', price: 3500, type: 'hospitality', desc: 'Host a refreshed networking pause between conference tracks with dedicated branded hospitality.' },
+      { id: 'live-lanyard', name: 'Lanyard & Badge Partner', price: 3500, type: 'brand', desc: 'Put your logo around the neck of every planner, speaker, and executive across the entire event.' }
+    ];
+
+    const EDITORIAL_TOPICS = [
+      { id: 'topic-av', title: 'Live Production, Staging & AV Innovation', openingBid: 6500, buyNow: 9500, status: '1 Active Bid', statusType: 'hot', angle: 'Lead the national conversation on staging architecture, projection, sound, and technical showcraft.' },
+      { id: 'topic-decor', title: 'Immersive Decor, Floral & Spatial Architecture', openingBid: 5500, buyNow: 8500, status: 'Available', statusType: 'open', angle: 'Showcase visionary room transformations, botanical design, and luxury event environments.' },
+      { id: 'topic-culinary', title: 'Culinary Craft, Catering & Hospitality Futures', openingBid: 5500, buyNow: 8500, status: 'Available', statusType: 'open', angle: 'Own the editorial narrative around elevated gastronomy, hospitality service, and interactive menus.' },
+      { id: 'topic-venues', title: 'Iconic Venues & Canadian Destination Showcase', openingBid: 6000, buyNow: 9000, status: '2 Active Bids', statusType: 'hot', angle: 'Position your destination, hotel group, or flagship venue at the top of planner sourcing lists.' },
+      { id: 'topic-corporate', title: 'Corporate Brand Activation & Executive Events', openingBid: 6500, buyNow: 9500, status: 'Available', statusType: 'open', angle: 'Demonstrate measurable brand impact across national conferences, product launches, and VIP experiences.' },
+      { id: 'topic-legacy', title: '30 Years of Milestone Celebrations & Legacy', openingBid: 7500, buyNow: 11000, status: 'Priority Hold', statusType: 'hold', angle: 'Anchor the commemorative edition alongside three decades of Canada\'s most iconic celebrations.' }
+    ];
+
+    const PLACEMENT_TIERS = [
+      { id: 'standard', label: 'Standard Feature Spread', premium: 0, desc: 'Full 4-page feature inside core editorial section' },
+      { id: 'front', label: 'Prime Front-of-Book Placement', premium: 1500, desc: 'Positioned in the opening quarter of the book' },
+      { id: 'centerfold', label: 'Centerfold Anchor Feature', premium: 2500, desc: 'Natural lay-flat visual centerpiece of the hardcover' },
+      { id: 'opening', label: 'Opening Feature Story', premium: 3500, desc: 'The very first signature story readers encounter' }
+    ];
+
+    const PRINT_ADS = [
+      { id: 'ad-obc', name: 'Outside Back Cover', price: 6500, tag: 'Exclusive • 1 Available', desc: 'Unmatched permanent visibility on the glossy back cover of the Spring 2027 Commemorative Hardcover Edition.' },
+      { id: 'ad-inside-cover', name: 'Inside Front / Back Cover', price: 5000, tag: 'Prime Position • 2 Available', desc: 'High-impact full-bleed cover position framing the opening or closing chapter of the collector\'s book.' },
+      { id: 'ad-spread', name: 'Double-Page Tribute Spread', price: 4500, tag: 'Two Full Pages', desc: 'Cinematic two-page brand showcase or 30th Anniversary tribute spread across facing hardcover pages.' },
+      { id: 'ad-full', name: 'Full-Page Anniversary Tribute Ad', price: 2800, tag: 'Collector\'s Tribute', desc: 'Celebrate 30 years of Canadian events with a full-page glossy brand statement and keepsake presence.' },
+      { id: 'ad-half', name: 'Half-Page Congratulatory Ad', price: 1650, tag: 'Industry Tribute', desc: 'Join Canada\'s leading brands with a crisp half-page congratulatory tribute in the Spring 2027 edition.' }
+    ];
+
+    const MARKETPLACE_SPACES = [
+      { id: 'mkt-popup', name: 'The Pop-Up', size: "6' × 8'", price: 2250, desc: 'A boutique perimeter space designed for emerging brands, specialty suppliers, and curated product displays.' },
+      { id: 'mkt-showcase', name: 'The Showcase Pod', size: "10' × 10'", price: 3250, desc: 'A dedicated space to showcase your brand, demonstrate products, and welcome planners into your environment.' },
+      { id: 'mkt-signature', name: 'The Signature Pod', size: "10' × 20'", price: 6250, desc: 'An expanded environment for immersive displays, hospitality, product demonstrations, and deeper engagement.' },
+      { id: 'mkt-island', name: 'The Flagship Island', size: "20' × 20'", price: 11500, desc: 'A premium standalone destination on the show floor—create an immersive branded environment at the center of CSE Live!.' }
+    ];
+
+    const CAMPAIGN_ITEMS = {
+      'camp-3mo': { id: 'camp-3mo', name: '3-Month Integrated Marketing Campaign (incl. Showcase Pod)', section: 'Integrated Campaigns', price: 6200 },
+      'camp-6mo': { id: 'camp-6mo', name: '6-Month Integrated Marketing Campaign (incl. Showcase Pod)', section: 'Integrated Campaigns', price: 8950 },
+      'camp-9mo': { id: 'camp-9mo', name: '9-Month Integrated Marketing Campaign (incl. Showcase Pod)', section: 'Integrated Campaigns', price: 11500 },
+      'hosted-planner-pkg': { id: 'hosted-planner-pkg', name: 'Hosted Planner Partnership (10 Curated Buyers)', section: 'Hosted Planner', price: 10000 }
+    };
+
+    // =========================================================================
+    // 2. APPLICATION STATE
+    // =========================================================================
+    const state = {
+      view: 'prospect', // 'prospect' | 'returning' | 'executive'
+      portalOpen: false,
+      cseLiveFilter: 'all',
+      magTab: 'topics',
+      selectedAwardCategory: AWARD_CATEGORIES[0],
+      buyerMix: [
+        { id: 'corp', label: 'Corporate Planners', count: 4, color: '#6E1242' },
+        { id: 'wed', label: 'Wedding Planners', count: 2, color: '#D9387E' },
+        { id: 'assoc', label: 'Association Buyers', count: 2, color: '#D4AF37' },
+        { id: 'agency', label: 'Event Agencies & Decor', count: 2, color: '#F2A585' }
+      ],
+      cart: [], // [{ id, name, section, price, meta }]
+      topicSelections: {}, // topicId -> { mode: 'bid'|'lock', placement, amount }
+      activeBidTopicId: null,
+      activePlacementId: 'standard',
+      confirmation: {
+        confirmed: false,
+        id: 'CSE-2027-3041',
+        company: 'TD Commercial Events',
+        contact: 'Sarah Chen',
+        email: 's.chen@tdcommercial.ca',
+        po: 'PO-2027-301',
+        settlement: 'online'
+      },
+      portalTasks: [
+        { id: 't-logo', title: 'Brand Assets Upload (Vector SVG/EPS & High-Res PNG)', due: 'Jan 15, 2027', desc: 'Upload your primary light and dark logos for Gala screens, badges, and hardcover print.', done: false, actionLabel: 'Upload Brand Kit', completedNote: 'Logo_Pack_2027.zip uploaded & verified' },
+        { id: 't-bio', title: '150-Word Brand Bio & Official Website Link', due: 'Jan 22, 2027', desc: 'Used for CSE directory listing, Gala digital program, and social media introduction.', done: false, actionLabel: 'Submit Bio & Link', completedNote: 'Brand bio & URL saved to CSE production hub' },
+        { id: 't-editorial', title: 'Editorial & Hardcover Magazine Topic Kickoff Brief', due: 'Feb 05, 2027', desc: 'Share key talking points and executive spokesperson name ahead of your CSE editorial call.', done: false, actionLabel: 'Submit Editorial Brief', completedNote: 'Editorial kickoff brief routed to CSE Editor-in-Chief' },
+        { id: 't-hosted', title: 'Hosted Planner Curated Buyer Preferences', due: 'Feb 12, 2027', desc: 'Confirm your 10-buyer mix and optional branded lanyard shipment preference.', done: false, actionLabel: 'Confirm 10-Buyer Mix', completedNote: 'Buyer preferences locked for CSE curation team' },
+        { id: 't-passes', title: 'Staff & VIP Gala Pass Registration (Up to 8 Passes)', due: 'Mar 15, 2027', desc: 'Register your on-site representatives and Gala VIP guests for instant badge readiness.', done: false, actionLabel: 'Register Attendee Names', completedNote: '4 VIP & staff passes registered' },
+        { id: 't-vault', title: 'Post-Event Media Vault (Gala Photos, Film Clip & Impact Report)', due: 'Unlocks May 2027', desc: 'Your permanent gallery of red carpet photography, tribute video clips, and reach metrics.', done: false, locked: true, actionLabel: 'Unlocks Post-Event', completedNote: '' }
+      ]
+    };
+
+    // =========================================================================
+    // 3. URL ROUTING & VIEW SWITCHING (?view=prospect | returning | executive)
+    // =========================================================================
+    function getInitialViewFromURL() {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const v = (params.get('view') || '').toLowerCase();
+        if (['prospect', 'returning', 'executive'].includes(v)) return v;
+      } catch (e) {}
+      return 'prospect';
+    }
+
+    function updateURLParam(viewName) {
+      try {
+        const url = new URL(window.location.href);
+        url.searchParams.set('view', viewName);
+        window.history.replaceState({}, '', url.toString());
+      } catch (e) {
+        // Safe fallback inside restricted iframes
+      }
+    }
+
+    function buildShareURL(viewName) {
+      try {
+        const url = new URL(window.location.href);
+        url.searchParams.set('view', viewName);
+        return url.toString();
+      } catch (e) {
+        return `https://your-github-pages-url/?view=${viewName}`;
+      }
+    }
+
+    function switchView(viewName) {
+      state.view = viewName;
+      state.portalOpen = false;
+      updateURLParam(viewName);
+
+      // Update Demo Bar Tabs
+      document.querySelectorAll('.view-tab').forEach(btn => {
+        const isActive = btn.getAttribute('data-view-btn') === viewName;
+        btn.className = isActive
+          ? 'view-tab px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all duration-200 cursor-pointer bg-gold-gradient text-plum-950 shadow-gold'
+          : 'view-tab px-3.5 py-1.5 rounded-full text-xs font-medium transition-all duration-200 cursor-pointer text-ivory-200/80 hover:text-ivory-100';
+      });
+
+      const prospectusEl = document.getElementById('prospectus-experience');
+      const portalEl = document.getElementById('sponsor-portal-view');
+      const execEl = document.getElementById('executive-tour-view');
+      const anchorsEl = document.getElementById('prospectus-anchors');
+      const mobileAnchorsEl = document.getElementById('mobile-anchors');
+      const cartBarEl = document.getElementById('sticky-cart-bar');
+
+      portalEl.classList.add('hidden');
+      document.getElementById('portal-nav-label').textContent = 'Partner Portal';
+
+      if (viewName === 'executive') {
+        prospectusEl.classList.add('hidden');
+        execEl.classList.remove('hidden');
+        anchorsEl.classList.add('hidden');
+        anchorsEl.classList.remove('lg:flex');
+        mobileAnchorsEl.classList.add('hidden');
+        cartBarEl.classList.add('hidden');
+        updateSimulator();
+        updateShareURLCards();
+      } else {
+        execEl.classList.add('hidden');
+        prospectusEl.classList.remove('hidden');
+        anchorsEl.classList.remove('hidden');
+        anchorsEl.classList.add('lg:flex');
+        mobileAnchorsEl.classList.remove('hidden');
+        cartBarEl.classList.remove('hidden');
+        applyProspectusCopyForView(viewName);
+      }
+
+      // Pre-fill realistic checkout profile per view if not yet confirmed
+      if (!state.confirmation.confirmed) {
+        if (viewName === 'returning') {
+          state.confirmation.company = 'BB Blanc';
+          state.confirmation.contact = 'Marcus Vance';
+          state.confirmation.email = 'mvance@bbblanc.com';
+        } else {
+          state.confirmation.company = 'TD Commercial Events';
+          state.confirmation.contact = 'Sarah Chen';
+          state.confirmation.email = 's.chen@tdcommercial.ca';
+        }
+      }
+
+      renderAllCatalogSections();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function applyProspectusCopyForView(viewName) {
+      const badge = document.getElementById('hero-badge');
+      const headline = document.getElementById('hero-headline');
+      const subhead = document.getElementById('hero-subhead');
+      const cta = document.getElementById('hero-primary-cta');
+      const prospectPanel = document.getElementById('prospect-overview-panel');
+      const returningPanel = document.getElementById('returning-overview-panel');
+
+      if (viewName === 'returning') {
+        badge.textContent = 'RETURNING PARTNER EDITION • PRIORITY ACCESS';
+        headline.innerHTML = 'Welcome Back to Year 30.<br /><span class="text-gold-gradient italic">Here Is What Changed for You.</span>';
+        subhead.textContent = 'You helped build three decades of Canadian events. For our 30th Anniversary, we eliminated the back-and-forth admin, elevated the Marketplace, and opened priority access to our Spring 2027 Commemorative Hardcover Edition.';
+        cta.innerHTML = 'Claim Priority 2027 Access <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>';
+        prospectPanel.classList.add('hidden');
+        returningPanel.classList.remove('hidden');
+      } else {
+        badge.textContent = 'FIRST-TIME PARTNER PROSPECTUS • 30TH ANNIVERSARY';
+        headline.innerHTML = 'Be Seen. Be Experienced.<br /><span class="text-gold-gradient italic">Be Remembered.</span>';
+        subhead.textContent = 'Connect directly with Canada\'s corporate planners, agency directors, and event decision-makers across two distinct flagship audiences: CSE Live! and the Canadian Event Awards Gala.';
+        cta.innerHTML = 'Explore 30th Anniversary Opportunities <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>';
+        returningPanel.classList.add('hidden');
+        prospectPanel.classList.remove('hidden');
+      }
+    }
+
+    function toggleDemoBar(hide) {
+      const bar = document.getElementById('demo-bar');
+      const restoreBtn = document.getElementById('restore-demo-btn');
+      if (hide) {
+        bar.classList.add('hidden');
+        restoreBtn.classList.remove('hidden');
+        showToast('Sponsor Preview active — demo bar hidden');
+      } else {
+        bar.classList.remove('hidden');
+        restoreBtn.classList.add('hidden');
+      }
+    }
+
+    function copyTextSafely(text, successMsg) {
+      try {
+        const tempInput = document.createElement('textarea');
+        tempInput.value = text;
+        tempInput.style.position = 'fixed';
+        tempInput.style.opacity = '0';
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand('copy');
+        document.body.removeChild(tempInput);
+        showToast(successMsg);
+      } catch (e) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(() => showToast(successMsg)).catch(() => showToast('Link ready: ' + text));
+        } else {
+          showToast('Link ready to share');
+        }
+      }
+    }
+
+    function copyActiveLink() {
+      const link = buildShareURL(state.view);
+      copyTextSafely(link, `Copied ${state.view} link to clipboard`);
+    }
+
+    function copySpecificLink(viewName) {
+      const link = buildShareURL(viewName);
+      copyTextSafely(link, `Copied ?view=${viewName} link`);
+    }
+
+    function updateShareURLCards() {
+      const pEl = document.getElementById('share-url-prospect');
+      const rEl = document.getElementById('share-url-returning');
+      if (pEl) pEl.textContent = buildShareURL('prospect');
+      if (rEl) rEl.textContent = buildShareURL('returning');
+    }
+
+    // =========================================================================
+    // 4. GOAL SELECTOR & FLOOR PLAN INTERACTIONS
+    // =========================================================================
+    function selectGoalPath(pathKey) {
+      const map = {
+        'buyer-access': { target: '#hosted-planner', msg: 'Highlighted Direct Buyer Access — no booth required' },
+        'print-topic': { target: '#hardcover-magazine', msg: 'Opened Hardcover Editorial Topic Ownership & Bidding' },
+        'prestige': { target: '#awards-gala', msg: 'Viewing Canadian Event Awards Gala Flagship Ownership' },
+        'show-floor': { target: '#marketplace', msg: 'Viewing Elevated Marketplace Environments & Campaigns' }
+      };
+      const entry = map[pathKey];
+      if (!entry) return;
+      if (pathKey === 'print-topic') switchMagTab('topics');
+      const el = document.querySelector(entry.target);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      showToast(entry.msg);
+    }
+
+    function highlightSpace(spaceId) {
+      document.querySelectorAll('[data-space-card]').forEach(card => {
+        card.classList.remove('ring-2', 'ring-peony-600', 'scale-[1.02]');
+      });
+      const target = document.querySelector(`[data-space-card="${spaceId}"]`);
+      if (target) {
+        target.classList.add('ring-2', 'ring-peony-600', 'scale-[1.02]');
+        target.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+
+    // =========================================================================
+    // 5. RENDERING INTERACTIVE CATALOGS
+    // =========================================================================
+    function formatCAD(num) {
+      return '$' + Number(num || 0).toLocaleString('en-CA');
+    }
+
+    function isInCart(id) {
+      return state.cart.some(item => item.id === id);
+    }
+
+    function getCtaLabel(inCart) {
+      if (inCart) return '✓ Added to Partnership';
+      return state.view === 'returning' ? 'Lock Priority Tier' : 'Add to Partnership';
+    }
+
+    function renderAllCatalogSections() {
+      renderGalaGrid();
+      renderCseLiveGrid();
+      renderBuyerMixWidget();
+      renderEditorialTopics();
+      renderPrintAds();
+      renderMarketplaceGrid();
+      syncAllCartButtons();
+      updateCartBar();
+    }
+
+    function renderGalaGrid() {
+      const container = document.getElementById('gala-grid');
+      const regularItems = GALA_ITEMS.filter(item => !item.featured);
+      container.innerHTML = regularItems.map(item => {
+        const added = isInCart(item.id);
+        return `
+          <div class="rounded-2xl p-6 bg-white border ${added ? 'border-peony-600 ring-1 ring-peony-600/40' : 'border-ivory-300'} shadow-card flex flex-col justify-between transition">
+            <div>
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-peony-600">${item.badge}</span>
+                <span class="font-editorial text-2xl font-bold text-plum-900">${formatCAD(item.price)}</span>
+              </div>
+              <h3 class="font-editorial text-2xl font-bold text-plum-900 mt-2">${item.name}</h3>
+              <p class="text-xs sm:text-sm text-plum-900/75 leading-relaxed mt-2">${item.desc}</p>
+              ${item.hasCategoryPicker ? `
+                <div class="mt-4">
+                  <label class="block text-[10px] font-bold uppercase tracking-wider text-plum-900/65 mb-1">Choose Award Category</label>
+                  <select id="award-cat-select" onchange="updateAwardCategory(this.value)"
+                    class="w-full px-3 py-2 rounded-lg bg-ivory-50 border border-ivory-300 text-xs font-medium text-plum-900 focus:outline-none focus:border-peony-600">
+                    ${AWARD_CATEGORIES.map(c => `<option value="${c}" ${c === state.selectedAwardCategory ? 'selected' : ''}>${c}</option>`).join('')}
+                  </select>
+                </div>
+              ` : ''}
+            </div>
+            <button data-cart-btn="${item.id}" onclick="toggleCartItem('${item.id}')"
+              class="mt-6 w-full py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider transition cursor-pointer ${
+                added
+                  ? 'bg-peony-600 text-ivory-100'
+                  : 'bg-plum-900 hover:bg-plum-800 text-gold-300'
+              }">
+              ${getCtaLabel(added)}
+            </button>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function updateAwardCategory(cat) {
+      state.selectedAwardCategory = cat;
+      const existing = state.cart.find(i => i.id === 'gala-category');
+      if (existing) {
+        existing.name = `Individual Award Category Partner (${cat})`;
+        updateCartBar();
+        showToast(`Updated Award Category to "${cat}"`);
+      }
+    }
+
+    function filterCseLive(type) {
+      state.cseLiveFilter = type;
+      renderCseLiveGrid();
+    }
+
+    function renderCseLiveGrid() {
+      // Update Filter Buttons
+      document.querySelectorAll('.live-filter-btn').forEach(btn => {
+        const active = btn.getAttribute('data-live-filter') === state.cseLiveFilter;
+        btn.className = active
+          ? 'live-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition cursor-pointer bg-gold-gradient text-plum-950 shadow-gold'
+          : 'live-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition cursor-pointer bg-plum-900 text-ivory-200/80 border border-gold-hairline hover:border-gold-400';
+      });
+
+      const items = state.cseLiveFilter === 'all'
+        ? CSE_LIVE_ITEMS
+        : CSE_LIVE_ITEMS.filter(i => i.type === state.cseLiveFilter);
+
+      const typeLabels = { brand: 'Brand Sponsor', experience: 'Experience Partner', hospitality: 'Hospitality & Networking' };
+      const container = document.getElementById('cse-live-grid');
+      container.innerHTML = items.map(item => {
+        const added = isInCart(item.id);
+        return `
+          <div class="rounded-2xl p-6 bg-plum-900/80 border ${added ? 'border-gold-400 bg-plum-800/85' : 'border-gold-hairline'} flex flex-col justify-between transition hover:border-gold-500/60">
+            <div>
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-[10px] font-semibold uppercase tracking-[0.18em] text-peach-400">${typeLabels[item.type]}</span>
+                <span class="font-editorial text-2xl font-bold text-gold-300">${formatCAD(item.price)}</span>
+              </div>
+              <h3 class="font-editorial text-2xl font-semibold text-ivory-100 mt-2">${item.name}</h3>
+              <p class="text-xs sm:text-sm text-ivory-200/75 leading-relaxed mt-2">${item.desc}</p>
+            </div>
+            <button data-cart-btn="${item.id}" onclick="toggleCartItem('${item.id}')"
+              class="mt-6 w-full py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider transition cursor-pointer ${
+                added
+                  ? 'bg-gold-gradient text-plum-950 shadow-gold'
+                  : 'border border-gold-500/55 text-gold-300 hover:bg-gold-500 hover:text-plum-950'
+              }">
+              ${getCtaLabel(added)}
+            </button>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // =========================================================================
+    // 6. HOSTED PLANNER 10-BUYER MIX WIDGET
+    // =========================================================================
+    function adjustBuyerMix(id, delta) {
+      const total = state.buyerMix.reduce((sum, b) => sum + b.count, 0);
+      const target = state.buyerMix.find(b => b.id === id);
+      if (!target) return;
+
+      if (delta > 0 && total >= 10) {
+        // Automatically take 1 from the largest other category so sum stays strictly 10
+        const other = state.buyerMix.filter(b => b.id !== id && b.count > 0).sort((a, b) => b.count - a.count)[0];
+        if (!other) return;
+        other.count -= 1;
+        target.count += 1;
+      } else if (delta < 0 && target.count > 0) {
+        // Add 1 to the first other category to maintain 10 curated buyers
+        const other = state.buyerMix.find(b => b.id !== id);
+        if (!other) return;
+        target.count -= 1;
+        other.count += 1;
+      }
+
+      renderBuyerMixWidget();
+      const cartItem = state.cart.find(c => c.id === 'hosted-planner-pkg');
+      if (cartItem) {
+        cartItem.meta = getBuyerMixSummaryText();
+      }
+    }
+
+    function getBuyerMixSummaryText() {
+      return state.buyerMix.filter(b => b.count > 0).map(b => `${b.count} ${b.label}`).join(' • ');
+    }
+
+    function renderBuyerMixWidget() {
+      const controls = document.getElementById('buyer-mix-controls');
+      const bar = document.getElementById('buyer-mix-bar');
+      const summary = document.getElementById('buyer-mix-summary');
+
+      controls.innerHTML = state.buyerMix.map(b => `
+        <div class="flex items-center justify-between gap-3">
+          <div class="flex items-center gap-2.5">
+            <span class="w-3 h-3 rounded-full shrink-0" style="background:${b.color}"></span>
+            <span class="text-xs sm:text-sm font-semibold text-plum-900">${b.label}</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="adjustBuyerMix('${b.id}', -1)" class="w-7 h-7 rounded-full border border-plum-900/25 hover:bg-plum-900 hover:text-ivory-100 text-plum-900 font-bold text-sm leading-none transition cursor-pointer">&minus;</button>
+            <span class="w-6 text-center text-sm font-bold text-plum-900">${b.count}</span>
+            <button onclick="adjustBuyerMix('${b.id}', 1)" class="w-7 h-7 rounded-full border border-plum-900/25 hover:bg-plum-900 hover:text-ivory-100 text-plum-900 font-bold text-sm leading-none transition cursor-pointer">+</button>
+          </div>
+        </div>
+      `).join('');
+
+      bar.innerHTML = state.buyerMix.map(b => `
+        <div style="width:${b.count * 10}%; background:${b.color};" class="transition-all duration-300"></div>
+      `).join('');
+
+      summary.textContent = 'Your 10-Buyer Cohort: ' + getBuyerMixSummaryText();
+    }
+
+    // =========================================================================
+    // 7. HARDCOVER MAGAZINE: EDITORIAL TOPIC BIDDING & PRINT ADS
+    // =========================================================================
+    function switchMagTab(tab) {
+      state.magTab = tab;
+      const tBtn = document.getElementById('mag-tab-topics');
+      const aBtn = document.getElementById('mag-tab-ads');
+      const tPanel = document.getElementById('mag-panel-topics');
+      const aPanel = document.getElementById('mag-panel-ads');
+
+      if (tab === 'topics') {
+        tBtn.className = 'px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide transition cursor-pointer bg-gold-gradient text-plum-950 shadow-gold';
+        aBtn.className = 'px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide transition cursor-pointer bg-plum-950 text-ivory-200/80 border border-gold-hairline hover:border-gold-400';
+        tPanel.classList.remove('hidden');
+        aPanel.classList.add('hidden');
+      } else {
+        aBtn.className = 'px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide transition cursor-pointer bg-gold-gradient text-plum-950 shadow-gold';
+        tBtn.className = 'px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide transition cursor-pointer bg-plum-950 text-ivory-200/80 border border-gold-hairline hover:border-gold-400';
+        aPanel.classList.remove('hidden');
+        tPanel.classList.add('hidden');
+      }
+    }
+
+    function renderEditorialTopics() {
+      switchMagTab(state.magTab);
+      const container = document.getElementById('editorial-topics-grid');
+      container.innerHTML = EDITORIAL_TOPICS.map(topic => {
+        const sel = state.topicSelections[topic.id];
+        let statusBadge = '';
+        if (sel) {
+          statusBadge = sel.mode === 'lock'
+            ? `<span class="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-bold uppercase tracking-wider">Locked by You • ${formatCAD(sel.amount)}</span>`
+            : `<span class="px-2.5 py-1 rounded-full bg-gold-500/25 text-gold-300 text-[10px] font-bold uppercase tracking-wider">Your Bid • ${formatCAD(sel.amount)}</span>`;
+        } else if (topic.statusType === 'hot') {
+          statusBadge = `<span class="px-2.5 py-1 rounded-full bg-peony-600/35 text-peach-300 text-[10px] font-semibold uppercase tracking-wider">${topic.status}</span>`;
+        } else if (topic.statusType === 'hold') {
+          statusBadge = `<span class="px-2.5 py-1 rounded-full bg-gold-500/20 text-gold-300 text-[10px] font-semibold uppercase tracking-wider">${topic.status}</span>`;
+        } else {
+          statusBadge = `<span class="px-2.5 py-1 rounded-full bg-white/10 text-ivory-200/85 text-[10px] font-semibold uppercase tracking-wider">${topic.status}</span>`;
+        }
+
+        return `
+          <div class="rounded-2xl p-6 bg-plum-950/90 border ${sel ? 'border-gold-400 shadow-gold' : 'border-gold-hairline'} flex flex-col justify-between transition">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="text-[10px] font-semibold uppercase tracking-[0.2em] text-gold-400">4-Page Exclusive Feature</span>
+                ${statusBadge}
+              </div>
+              <h3 class="font-editorial text-2xl font-semibold text-ivory-100 leading-snug">${topic.title}</h3>
+              <p class="text-xs text-ivory-200/75 leading-relaxed mt-2">${topic.angle}</p>
+
+              <div class="grid grid-cols-2 gap-2.5 mt-4 p-3 rounded-xl bg-plum-900/90 border border-white/5 text-xs">
+                <div>
+                  <div class="text-[10px] uppercase tracking-wider text-ivory-200/55">Opening Bid</div>
+                  <div class="font-editorial text-xl font-bold text-ivory-100">${formatCAD(topic.openingBid)}</div>
+                </div>
+                <div class="border-l border-white/10 pl-3">
+                  <div class="text-[10px] uppercase tracking-wider text-gold-400">Buy-It-Now Lock</div>
+                  <div class="font-editorial text-xl font-bold text-gold-300">${formatCAD(topic.buyNow)}</div>
+                </div>
+              </div>
+              ${sel ? `<div class="mt-2.5 text-[11px] text-gold-300 font-medium">Placement: ${sel.placementLabel}</div>` : ''}
+            </div>
+
+            <div class="mt-5 flex gap-2">
+              <button onclick="openBidModal('${topic.id}')"
+                class="flex-1 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider transition cursor-pointer ${
+                  sel ? 'bg-gold-gradient text-plum-950' : 'border border-gold-500/60 text-gold-300 hover:bg-gold-500 hover:text-plum-950'
+                }">
+                ${sel ? 'Adjust Bid / Placement' : 'Place Bid / Lock Topic'}
+              </button>
+              ${sel ? `<button onclick="removeTopicSelection('${topic.id}')" class="px-3.5 py-2.5 rounded-full border border-white/15 text-ivory-200/70 hover:text-ivory-100 text-xs cursor-pointer" title="Remove">&times;</button>` : ''}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function openBidModal(topicId) {
+      const topic = EDITORIAL_TOPICS.find(t => t.id === topicId);
+      if (!topic) return;
+      state.activeBidTopicId = topicId;
+      const existing = state.topicSelections[topicId];
+      state.activePlacementId = existing ? existing.placementId : 'standard';
+
+      document.getElementById('bid-modal-title').textContent = topic.title;
+      document.getElementById('bid-modal-status').textContent = `Current Status: ${topic.status} • Includes 4-page spread, newsletter spotlight, reprint license & 10 hardcover copies`;
+
+      renderPlacementOptions();
+      document.getElementById('bid-modal').classList.remove('hidden');
+    }
+
+    function renderPlacementOptions() {
+      const topic = EDITORIAL_TOPICS.find(t => t.id === state.activeBidTopicId);
+      if (!topic) return;
+      const container = document.getElementById('placement-options');
+      container.innerHTML = PLACEMENT_TIERS.map(p => {
+        const active = p.id === state.activePlacementId;
+        return `
+          <button onclick="selectPlacement('${p.id}')"
+            class="text-left p-3 rounded-xl border transition cursor-pointer ${
+              active ? 'bg-plum-800 border-gold-400' : 'bg-plum-950/60 border-gold-hairline hover:border-gold-500/60'
+            }">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-xs font-semibold text-ivory-100">${p.label}</span>
+              <span class="text-xs font-bold text-gold-400">${p.premium === 0 ? '+$0' : '+' + formatCAD(p.premium)}</span>
+            </div>
+            <div class="text-[10px] text-ivory-200/65 mt-1">${p.desc}</div>
+          </button>
+        `;
+      }).join('');
+
+      const placement = PLACEMENT_TIERS.find(p => p.id === state.activePlacementId) || PLACEMENT_TIERS[0];
+      const minBid = topic.openingBid + placement.premium;
+      const buyNowTotal = topic.buyNow + placement.premium;
+
+      const bidInput = document.getElementById('custom-bid-input');
+      bidInput.min = minBid;
+      bidInput.value = minBid;
+      document.getElementById('min-bid-hint').textContent = `Minimum bid with placement: ${formatCAD(minBid)}`;
+      document.getElementById('bin-price-display').textContent = formatCAD(buyNowTotal);
+    }
+
+    function selectPlacement(placementId) {
+      state.activePlacementId = placementId;
+      renderPlacementOptions();
+    }
+
+    function closeBidModal() {
+      document.getElementById('bid-modal').classList.add('hidden');
+    }
+
+    function submitTopicSelection(mode) {
+      const topic = EDITORIAL_TOPICS.find(t => t.id === state.activeBidTopicId);
+      const placement = PLACEMENT_TIERS.find(p => p.id === state.activePlacementId) || PLACEMENT_TIERS[0];
+      if (!topic) return;
+
+      const minBid = topic.openingBid + placement.premium;
+      let amount = topic.buyNow + placement.premium;
+      if (mode === 'bid') {
+        const entered = Number(document.getElementById('custom-bid-input').value);
+        amount = isNaN(entered) || entered < minBid ? minBid : entered;
+      }
+
+      state.topicSelections[topic.id] = {
+        mode,
+        placementId: placement.id,
+        placementLabel: placement.label,
+        amount
+      };
+
+      // Upsert into Cart
+      const cartId = `mag-${topic.id}`;
+      state.cart = state.cart.filter(i => i.id !== cartId);
+      state.cart.push({
+        id: cartId,
+        name: `Hardcover Editorial ${mode === 'lock' ? 'Lock' : 'Bid'}: ${topic.title}`,
+        section: 'Hardcover Magazine',
+        price: amount,
+        meta: placement.label
+      });
+
+      closeBidModal();
+      renderEditorialTopics();
+      updateCartBar();
+      showToast(mode === 'lock' ? `Locked exclusive topic: ${topic.title}` : `Bid placed (${formatCAD(amount)}) on ${topic.title}`);
+    }
+
+    function removeTopicSelection(topicId) {
+      delete state.topicSelections[topicId];
+      state.cart = state.cart.filter(i => i.id !== `mag-${topicId}`);
+      renderEditorialTopics();
+      updateCartBar();
+      showToast('Editorial topic removed from partnership');
+    }
+
+    function renderPrintAds() {
+      const container = document.getElementById('print-ads-grid');
+      container.innerHTML = PRINT_ADS.map(ad => {
+        const added = isInCart(ad.id);
+        return `
+          <div class="rounded-2xl p-6 bg-plum-950/90 border ${added ? 'border-gold-400 shadow-gold' : 'border-gold-hairline'} flex flex-col justify-between transition">
+            <div>
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-[10px] font-semibold uppercase tracking-[0.2em] text-peach-400">${ad.tag}</span>
+                <span class="font-editorial text-2xl font-bold text-gold-300">${formatCAD(ad.price)}</span>
+              </div>
+              <h3 class="font-editorial text-2xl font-semibold text-ivory-100 mt-2">${ad.name}</h3>
+              <p class="text-xs sm:text-sm text-ivory-200/75 leading-relaxed mt-2">${ad.desc}</p>
+            </div>
+            <button data-cart-btn="${ad.id}" onclick="toggleCartItem('${ad.id}')"
+              class="mt-6 w-full py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider transition cursor-pointer ${
+                added ? 'bg-gold-gradient text-plum-950 shadow-gold' : 'border border-gold-500/60 text-gold-300 hover:bg-gold-500 hover:text-plum-950'
+              }">
+              ${getCtaLabel(added)}
+            </button>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function renderMarketplaceGrid() {
+      const container = document.getElementById('marketplace-grid');
+      container.innerHTML = MARKETPLACE_SPACES.map(space => {
+        const added = isInCart(space.id);
+        return `
+          <div data-space-card="${space.id}" class="rounded-2xl p-6 bg-white border ${added ? 'border-peony-600 ring-1 ring-peony-600/40' : 'border-ivory-300'} shadow-card flex flex-col justify-between transition duration-300">
+            <div>
+              <div class="inline-block px-2.5 py-1 rounded-full bg-plum-900/10 text-plum-900 text-[11px] font-bold tracking-wider">${space.size}</div>
+              <h3 class="font-editorial text-2xl font-bold text-plum-900 mt-3">${space.name}</h3>
+              <div class="font-editorial text-3xl font-bold text-peony-600 mt-1">${formatCAD(space.price)}</div>
+              <p class="text-xs sm:text-sm text-plum-900/75 leading-relaxed mt-3">${space.desc}</p>
+            </div>
+            <button data-cart-btn="${space.id}" onclick="toggleCartItem('${space.id}')"
+              class="mt-6 w-full py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider transition cursor-pointer ${
+                added ? 'bg-peony-600 text-ivory-100' : 'bg-plum-900 hover:bg-plum-800 text-gold-300'
+              }">
+              ${getCtaLabel(added)}
+            </button>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // =========================================================================
+    // 8. CART MANAGEMENT & SYNC
+    // =========================================================================
+    function findCatalogItemById(id) {
+      const gala = GALA_ITEMS.find(i => i.id === id);
+      if (gala) {
+        return {
+          id: gala.id,
+          name: gala.hasCategoryPicker ? `${gala.name} (${state.selectedAwardCategory})` : gala.name,
+          section: 'Canadian Event Awards Gala',
+          price: gala.price
+        };
+      }
+      const live = CSE_LIVE_ITEMS.find(i => i.id === id);
+      if (live) return { id: live.id, name: `CSE Live! — ${live.name}`, section: 'CSE Live!', price: live.price };
+
+      const ad = PRINT_ADS.find(i => i.id === id);
+      if (ad) return { id: ad.id, name: `Hardcover Print Ad — ${ad.name}`, section: 'Hardcover Magazine', price: ad.price };
+
+      const mkt = MARKETPLACE_SPACES.find(i => i.id === id);
+      if (mkt) return { id: mkt.id, name: `Marketplace — ${mkt.name} (${mkt.size})`, section: 'Marketplace', price: mkt.price };
+
+      if (CAMPAIGN_ITEMS[id]) {
+        const c = { ...CAMPAIGN_ITEMS[id] };
+        if (id === 'hosted-planner-pkg') c.meta = getBuyerMixSummaryText();
+        return c;
+      }
+      return null;
+    }
+
+    function toggleCartItem(id) {
+      if (isInCart(id)) {
+        state.cart = state.cart.filter(i => i.id !== id);
+        showToast('Removed from partnership summary');
+      } else {
+        const item = findCatalogItemById(id);
+        if (item) {
+          state.cart.push(item);
+          showToast(`Added ${item.name}`);
+        }
+      }
+      renderAllCatalogSections();
+    }
+
+    function removeCartItem(id) {
+      state.cart = state.cart.filter(i => i.id !== id);
+      if (id.startsWith('mag-')) {
+        const topicId = id.replace('mag-', '');
+        delete state.topicSelections[topicId];
+      }
+      renderAllCatalogSections();
+      if (!document.getElementById('checkout-modal').classList.contains('hidden')) {
+        renderCheckoutItems();
+      }
+    }
+
+    function syncAllCartButtons() {
+      // Sync static buttons (Tribute Film, Hosted Planner, 3 Campaigns)
+      ['gala-tribute-film', 'hosted-planner-pkg', 'camp-3mo', 'camp-6mo', 'camp-9mo'].forEach(id => {
+        const btn = document.querySelector(`[data-cart-btn="${id}"]`);
+        if (!btn) return;
+        const added = isInCart(id);
+        if (id === 'hosted-planner-pkg') {
+          btn.textContent = added ? '✓ Added to Partnership' : 'Add Hosted Planner ($10,000)';
+          btn.className = added
+            ? 'px-5 py-3 rounded-full bg-peony-600 text-ivory-100 font-semibold text-xs tracking-wide uppercase shadow-card transition cursor-pointer'
+            : 'px-5 py-3 rounded-full bg-plum-900 hover:bg-plum-800 text-gold-300 font-semibold text-xs tracking-wide uppercase shadow-card transition cursor-pointer';
+        } else if (id === 'gala-tribute-film') {
+          btn.textContent = added ? '✓ Added to Partnership' : getCtaLabel(false);
+        } else {
+          const baseLabel = id === 'camp-3mo' ? 'Select 3-Month Campaign' : id === 'camp-6mo' ? 'Select 6-Month Campaign' : 'Select 9-Month Campaign';
+          btn.textContent = added ? '✓ Campaign Selected' : baseLabel;
+        }
+      });
+    }
+
+    function getCartTotal() {
+      return state.cart.reduce((sum, i) => sum + Number(i.price || 0), 0);
+    }
+
+    function updateCartBar() {
+      const count = state.cart.length;
+      const total = getCartTotal();
+      document.getElementById('cart-count-badge').textContent = count;
+      document.getElementById('cart-total-display').textContent = formatCAD(total);
+      document.getElementById('cart-sub-note').textContent = count === 0
+        ? 'Select opportunities above to build your package'
+        : `${count} ${count === 1 ? 'opportunity' : 'opportunities'} selected — ready for direct settlement or Net 30 invoice`;
+    }
+
+    // =========================================================================
+    // 9. CHECKOUT, INVOICE GENERATION & INSTANT SPONSOR PORTAL UNLOCK
+    // =========================================================================
+    function openCheckoutModal() {
+      // If cart is empty, pre-load a sensible showcase item so Stacy can test in 1 click
+      if (state.cart.length === 0) {
+        state.cart.push(findCatalogItemById('hosted-planner-pkg'));
+        renderAllCatalogSections();
+        showToast('Pre-selected Hosted Planner Partnership so you can test confirmation');
+      }
+
+      document.getElementById('checkout-step-form').classList.remove('hidden');
+      document.getElementById('checkout-step-receipt').classList.add('hidden');
+
+      document.getElementById('input-company').value = state.confirmation.company;
+      document.getElementById('input-contact').value = state.confirmation.contact;
+      document.getElementById('input-email').value = state.confirmation.email;
+      document.getElementById('input-po').value = state.confirmation.po || '';
+
+      renderCheckoutItems();
+      document.getElementById('checkout-modal').classList.remove('hidden');
+    }
+
+    function renderCheckoutItems() {
+      const list = document.getElementById('checkout-items-list');
+      document.getElementById('modal-total-top').textContent = formatCAD(getCartTotal());
+      if (state.cart.length === 0) {
+        list.innerHTML = `<div class="p-4 rounded-xl bg-white border border-ivory-300 text-xs text-plum-900/65">No items currently selected. Close this window to add opportunities.</div>`;
+        return;
+      }
+      list.innerHTML = state.cart.map(item => `
+        <div class="flex items-center justify-between gap-3 p-3 rounded-xl bg-white border border-ivory-300">
+          <div>
+            <div class="text-xs font-bold text-plum-900">${item.name}</div>
+            <div class="text-[11px] text-plum-900/65">${item.section}${item.meta ? ' • ' + item.meta : ''}</div>
+          </div>
+          <div class="flex items-center gap-3 shrink-0">
+            <span class="font-editorial text-xl font-bold text-plum-900">${formatCAD(item.price)}</span>
+            <button onclick="removeCartItem('${item.id}')" class="text-plum-900/45 hover:text-peony-600 font-bold text-lg leading-none cursor-pointer" title="Remove">&times;</button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function closeCheckoutModal() {
+      document.getElementById('checkout-modal').classList.add('hidden');
+    }
+
+    function confirmPartnership() {
+      const company = document.getElementById('input-company').value.trim() || 'Partner Brand';
+      const contact = document.getElementById('input-contact').value.trim() || 'Primary Contact';
+      const email = document.getElementById('input-email').value.trim() || 'partner@brand.ca';
+      const po = document.getElementById('input-po').value.trim() || 'Direct Authorization';
+      const settlement = document.querySelector('input[name="settlement"]:checked')?.value || 'online';
+      const confCode = 'CSE-2027-' + Math.floor(3000 + Math.random() * 900);
+
+      state.confirmation = {
+        confirmed: true,
+        id: confCode,
+        company,
+        contact,
+        email,
+        po,
+        settlement
+      };
+
+      populateReceipt();
+      document.getElementById('checkout-step-form').classList.add('hidden');
+      document.getElementById('checkout-step-receipt').classList.remove('hidden');
+      showToast(`Confirmed ${confCode} — Sponsor Portal unlocked!`);
+    }
+
+    function populateReceipt() {
+      const c = state.confirmation;
+      document.getElementById('receipt-conf-id').textContent = c.id;
+      const badge = document.getElementById('receipt-status-badge');
+      if (c.settlement === 'online') {
+        badge.textContent = 'Paid Online • Direct Settlement';
+        badge.className = 'inline-block mt-1 px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-bold uppercase';
+      } else {
+        badge.textContent = 'Net 30 Invoice Issued • Category Locked';
+        badge.className = 'inline-block mt-1 px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900 text-[10px] font-bold uppercase';
+      }
+      document.getElementById('receipt-company').textContent = c.company;
+      document.getElementById('receipt-contact').textContent = c.contact;
+      document.getElementById('receipt-email').textContent = c.email;
+      document.getElementById('receipt-po').textContent = c.po;
+
+      const items = state.cart.length > 0 ? state.cart : [findCatalogItemById('hosted-planner-pkg')];
+      document.getElementById('receipt-line-items').innerHTML = items.map(i => `
+        <div class="py-2 flex justify-between gap-3">
+          <div>
+            <div class="font-semibold text-plum-900">${i.name}</div>
+            ${i.meta ? `<div class="text-[11px] text-plum-900/60">${i.meta}</div>` : ''}
+          </div>
+          <div class="font-bold text-plum-900 shrink-0">${formatCAD(i.price)}</div>
+        </div>
+      `).join('');
+      const total = items.reduce((s, i) => s + Number(i.price || 0), 0);
+      document.getElementById('receipt-total').textContent = formatCAD(total);
+    }
+
+    function openReceiptModal() {
+      populateReceipt();
+      document.getElementById('checkout-step-form').classList.add('hidden');
+      document.getElementById('checkout-step-receipt').classList.remove('hidden');
+      document.getElementById('checkout-modal').classList.remove('hidden');
+    }
+
+    function enterUnlockedPortal() {
+      closeCheckoutModal();
+      toggleSponsorPortal(true);
+    }
+
+    // =========================================================================
+    // 10. LIVE SPONSOR PORTAL LOGIC
+    // =========================================================================
+    function exitPortalIfActive() {
+      if (state.portalOpen) toggleSponsorPortal(false);
+    }
+
+    function toggleSponsorPortal(forceOpen) {
+      const next = typeof forceOpen === 'boolean' ? forceOpen : !state.portalOpen;
+      state.portalOpen = next;
+
+      const prospectusEl = document.getElementById('prospectus-experience');
+      const portalEl = document.getElementById('sponsor-portal-view');
+      const execEl = document.getElementById('executive-tour-view');
+      const cartBarEl = document.getElementById('sticky-cart-bar');
+      const navLabel = document.getElementById('portal-nav-label');
+
+      if (next) {
+        prospectusEl.classList.add('hidden');
+        execEl.classList.add('hidden');
+        cartBarEl.classList.add('hidden');
+        portalEl.classList.remove('hidden');
+        navLabel.textContent = 'Back to Media Kit';
+        renderSponsorPortal();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        portalEl.classList.add('hidden');
+        navLabel.textContent = 'Partner Portal';
+        if (state.view === 'executive') {
+          execEl.classList.remove('hidden');
+        } else {
+          prospectusEl.classList.remove('hidden');
+          cartBarEl.classList.remove('hidden');
+        }
+      }
+    }
+
+    function renderSponsorPortal() {
+      const c = state.confirmation;
+      document.getElementById('portal-company-name').textContent = c.company;
+      document.getElementById('portal-conf-code').textContent = c.id;
+      document.getElementById('portal-contact-name').textContent = c.contact;
+
+      const pill = document.getElementById('portal-status-pill');
+      if (c.confirmed) {
+        pill.textContent = c.settlement === 'online' ? 'Confirmed • Paid Online' : 'Confirmed • Net 30 Invoice Active';
+      } else {
+        pill.textContent = 'Live Portal Preview Mode';
+      }
+
+      const items = state.cart.length > 0
+        ? state.cart
+        : [
+            findCatalogItemById('gala-tribute-film'),
+            findCatalogItemById('hosted-planner-pkg')
+          ];
+
+      document.getElementById('portal-items-list').innerHTML = items.map(i => `
+        <span class="px-3.5 py-1.5 rounded-full bg-plum-950 border border-gold-500/40 text-xs text-ivory-100">
+          ${i.name} <strong class="text-gold-400 ml-1">${formatCAD(i.price)}</strong>
+        </span>
+      `).join('');
+
+      // Progress calculation (5 actionable tasks)
+      const actionable = state.portalTasks.filter(t => !t.locked);
+      const completed = actionable.filter(t => t.done).length;
+      const pct = Math.round((completed / actionable.length) * 100);
+      document.getElementById('portal-progress-pct').textContent = pct + '%';
+      document.getElementById('portal-progress-bar').style.width = pct + '%';
+      document.getElementById('portal-progress-note').textContent = pct === 100
+        ? 'All deliverables received — your brand is 100% production ready!'
+        : `${completed} of ${actionable.length} pre-event deliverables submitted.`;
+
+      // Render Task Cards
+      document.getElementById('portal-tasks-container').innerHTML = state.portalTasks.map(task => {
+        if (task.locked) {
+          return `
+            <div class="rounded-xl p-5 bg-plum-950/60 border border-white/10 opacity-75 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-[10px] font-semibold uppercase tracking-widest text-ivory-200/55">${task.due}</span>
+                </div>
+                <h4 class="font-editorial text-xl font-semibold text-ivory-100 mt-0.5">${task.title}</h4>
+                <p class="text-xs text-ivory-200/65 mt-1">${task.desc}</p>
+              </div>
+              <span class="px-4 py-2 rounded-full bg-plum-900 border border-white/10 text-[11px] font-semibold text-ivory-200/55 shrink-0 self-start sm:self-center">Locked Until May 2027</span>
+            </div>
+          `;
+        }
+
+        return `
+          <div class="rounded-xl p-5 ${task.done ? 'bg-emerald-950/35 border-emerald-500/40' : 'bg-plum-900/80 border-gold-hairline'} border flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition">
+            <div>
+              <div class="flex items-center gap-2.5">
+                <span class="text-[10px] font-semibold uppercase tracking-widest ${task.done ? 'text-emerald-300' : 'text-gold-400'}">
+                  ${task.done ? '✓ Submitted' : 'Due ' + task.due}
+                </span>
+              </div>
+              <h4 class="font-editorial text-xl font-semibold text-ivory-100 mt-0.5">${task.title}</h4>
+              <p class="text-xs text-ivory-200/75 mt-1">${task.done ? task.completedNote : task.desc}</p>
+            </div>
+            <button onclick="togglePortalTask('${task.id}')"
+              class="px-4 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider shrink-0 self-start sm:self-center transition cursor-pointer ${
+                task.done
+                  ? 'border border-emerald-400/50 text-emerald-300 hover:bg-emerald-950/50'
+                  : 'bg-gold-gradient text-plum-950 shadow-gold hover:brightness-105'
+              }">
+              ${task.done ? 'Update Submission' : task.actionLabel}
+            </button>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function togglePortalTask(taskId) {
+      const task = state.portalTasks.find(t => t.id === taskId);
+      if (!task || task.locked) return;
+      task.done = !task.done;
+      renderSponsorPortal();
+      showToast(task.done ? `Saved: ${task.completedNote}` : 'Deliverable marked pending');
+    }
+
+    // =========================================================================
+    // 11. EXECUTIVE REVENUE SIMULATOR (?view=executive)
+    // =========================================================================
+    function updateSimulator() {
+      const gala = Number(document.getElementById('sim-gala').value);
+      const hosted = Number(document.getElementById('sim-hosted').value);
+      const mag = Number(document.getElementById('sim-mag').value);
+      const mkt = Number(document.getElementById('sim-mkt').value);
+      const cat = Number(document.getElementById('sim-cat').value);
+
+      const galaRev = gala * 15000;
+      const hostedRev = hosted * 10000;
+      const magRev = mag * 7500;
+      const mktRev = mkt * 6250;
+      const catRev = cat * 3995;
+      const total = galaRev + hostedRev + magRev + mktRev + catRev;
+      const baseline = 250000;
+      const lift = total - baseline;
+      const buyers = hosted * 10;
+      const feesSaved = Math.round(total * 0.02);
+
+      document.getElementById('sim-gala-val').textContent = `${gala} deals (${formatCAD(galaRev)})`;
+      document.getElementById('sim-hosted-val').textContent = `${hosted} deals (${formatCAD(hostedRev)})`;
+      document.getElementById('sim-mag-val').textContent = `${mag} placements (${formatCAD(magRev)})`;
+      document.getElementById('sim-mkt-val').textContent = `${mkt} spaces (${formatCAD(mktRev)})`;
+      document.getElementById('sim-cat-val').textContent = `${cat} categories (${formatCAD(catRev)})`;
+
+      document.getElementById('sim-total-rev').textContent = formatCAD(total);
+      document.getElementById('sim-lift-note').textContent = lift >= 0
+        ? `+${formatCAD(lift)} incremental cash lift over prior $250K baseline`
+        : `${formatCAD(total)} projected total`;
+      document.getElementById('sim-buyers-count').textContent = buyers;
+      document.getElementById('sim-fees-saved').textContent = formatCAD(feesSaved);
+    }
+
+    // =========================================================================
+    // 12. TOAST FEEDBACK HELPER
+    // =========================================================================
+    let toastTimer = null;
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toast-message').textContent = message;
+      toast.classList.remove('opacity-0', 'translate-y-2');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-2');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+      }, 2800);
+    }
+
+    // =========================================================================
+    // 13. INITIALIZE ON LOAD
+    // =========================================================================
+    window.addEventListener('DOMContentLoaded', () => {
+      const initialView = getInitialViewFromURL();
+      switchView(initialView);
+    });
+  </script>
+</body>
+</html>
